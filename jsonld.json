@@ -7,7 +7,7 @@
       "url": "https://makiz-code.github.io/MKirell",
       "name": "MKirell — Portfolio",
       "description": "Portfolio website of Mohamed Khalil Zrelly presenting his academic background, professional experience, technical projects, and engineering capabilities, with a focus on Generative AI, machine learning, and modern software development practices across applied research and industry contexts.",
-      "inLanguage": ["en", "fr", "ar"],
+      "inLanguage": ["en", "fr"],
       "mainEntity": {
         "@id": "https://makiz-code.github.io/MKirell/#person"
       }
