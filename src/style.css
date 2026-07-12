@@ -1,0 +1,328 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design tokens ────────────────────────────────────────────── */
+:root {
+  --bg: #14161b;
+  --bg-tint: #1a1d24;
+  --surface: #1d212b;
+  --surface-2: #232836;
+  --ink: #e6eaf0;
+  --ink-soft: #b2bccb;
+  --muted: #8a93a3;
+  --accent: #d97757;
+  --accent-deep: #f2a089;
+  --accent-soft: rgba(217, 119, 87, 0.14);
+  --accent-line: rgba(217, 119, 87, 0.38);
+  --sage: #8fbf8a;
+  --sage-soft: rgba(143, 191, 138, 0.12);
+  --gold: #d6b06a;
+  --gold-soft: rgba(214, 176, 106, 0.12);
+  --line: rgba(255, 255, 255, 0.07);
+  --line-strong: rgba(255, 255, 255, 0.12);
+  --radius: 14px;
+  --radius-lg: 22px;
+  --transition: 0.25s ease;
+  --pad: clamp(24px, 5vw, 72px);
+}
+
+/* ─── Base ─────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.logo-dot {
+  color: var(--accent);
+}
+strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+ul {
+  list-style: none;
+}
+
+/* ─── Scroll reveal ─────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Shared: buttons ──────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: var(--radius);
+  font-family: "Inter", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition);
+}
+.btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn--primary:hover {
+  background: var(--accent-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(217, 119, 87, 0.32);
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+}
+.btn--ghost:hover {
+  border-color: var(--accent-line);
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+}
+.btn--lg {
+  padding: 16px 38px;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* ─── Shared: tags ─────────────────────────────────────────────── */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-family: "JetBrains Mono", monospace;
+  transition: all var(--transition);
+}
+.tag:hover {
+  border-color: var(--accent-line);
+  color: var(--accent-deep);
+}
+.tag--accent {
+  background: var(--accent-soft);
+  border-color: var(--accent-line);
+  color: var(--accent-deep);
+}
+.tags-sm .tag {
+  font-size: 0.72rem;
+  padding: 3px 9px;
+}
+
+/* ─── Skip link ────────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 9999;
+  border-radius: 0 0 var(--radius) 0;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ─── Shared: section layout ───────────────────────────────────── */
+.section {
+  padding: 130px 0;
+}
+.section--dark {
+  background: var(--bg-tint);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: var(--pad);
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.section-num {
+  font-family: "Fraunces", serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+}
+.section-name {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.section-h2 {
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 48px;
+}
+
+/* ─── Animations ───────────────────────────────────────────────── */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(110, 127, 92, 0.35);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 6px rgba(110, 127, 92, 0);
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes scroll-wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+/* ─── Social link ──────────────────────────────────────────────── */
+.social-link {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  color: var(--ink-soft);
+  background: var(--surface);
+  transition: all var(--transition);
+}
+.social-link svg {
+  width: 18px;
+  height: 18px;
+}
+.social-link:hover {
+  border-color: var(--accent-line);
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+/* ─── Reduced motion ───────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ─── Flag icons (gb / fr / tn only) ──────────────────────────── */
+.fi {
+  display: inline-block;
+  width: 18px;
+  height: 13px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.fi-gb {
+  background-image: url("./assets/flags/gb.svg");
+}
+.fi-fr {
+  background-image: url("./assets/flags/fr.svg");
+}
+.fi-tn {
+  background-image: url("./assets/flags/tn.svg");
+}
+.fi-nl {
+  background-image: url("./assets/flags/nl.svg");
+}
+.fi-pr {
+  background-image: url("./assets/flags/pr.svg");
+}
+
+/* ─── Background grid (fixed) ──────────────────────────────────── */
+.hero-bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(
+      ellipse 55% 45% at 88% 6%,
+      rgba(217, 119, 87, 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 45% 38% at 6% 92%,
+      rgba(110, 127, 92, 0.12),
+      transparent 60%
+    );
+  pointer-events: none;
+}

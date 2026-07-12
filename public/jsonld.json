@@ -1,0 +1,380 @@
+{
+  "@context": { "@vocab": "https://schema.org/" },
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://makiz-code.github.io/MKirell/#webpage",
+      "url": "https://makiz-code.github.io/MKirell",
+      "name": "MKirell — Portfolio",
+      "description": "Portfolio website of Mohamed Khalil Zrelly presenting his academic background, professional experience, technical projects, and engineering capabilities, with a focus on Generative AI, machine learning, and modern software development practices across applied research and industry contexts.",
+      "inLanguage": ["en", "fr"],
+      "mainEntity": {
+        "@id": "https://makiz-code.github.io/MKirell/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://makiz-code.github.io/MKirell/#person",
+      "name": "Mohamed Khalil Zrelly",
+      "givenName": "Mohamed Khalil",
+      "familyName": "Zrelly",
+      "jobTitle": "Generative AI Engineer Apprentice",
+      "email": "mailto:mohamed.khalil.zrelly@gmail.com",
+      "telephone": "+33758215856",
+      "url": "https://makiz-code.github.io/MKirell",
+      "sameAs": ["https://www.linkedin.com/in/mohamed-khalil-zrelly/"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Le Bourget",
+        "addressRegion": "Île-de-France",
+        "addressCountry": "FR"
+      },
+      "description": "Passionate about Generative AI and Agentic Systems, with a strong foundation in algorithms and problem solving — driven to build innovative AI solutions and grow through every project.",
+      "knowsAbout": [
+        "PyTorch",
+        "TensorFlow",
+        "Sklearn",
+        "XGBoost",
+        "Amazon SageMaker",
+        "LangChain",
+        "LangGraph",
+        "Milvus",
+        "Qdrant",
+        "Amazon Bedrock",
+        "Pandas",
+        "Matplotlib",
+        "PySpark",
+        "Apache Airflow",
+        "Amazon S3",
+        "Oracle",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Amazon DynamoDB",
+        "FastAPI",
+        "Flask",
+        "Express.js",
+        "Laravel",
+        "React",
+        "Vue.js",
+        "Git",
+        "GitHub",
+        "Pytest",
+        "Jest",
+        "Vitest",
+        "Playwright",
+        "Postman",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "GitHub Actions",
+        "Python",
+        "JavaScript/TS",
+        "PHP",
+        "Java",
+        "C/C++",
+        "PL/SQL"
+      ],
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "English",
+          "alternateName": "en",
+          "description": "B2 · TOEIC"
+        },
+        {
+          "@type": "Language",
+          "name": "French",
+          "alternateName": "fr",
+          "description": "B2 · TCF"
+        },
+        {
+          "@type": "Language",
+          "name": "Arabic",
+          "alternateName": "ar",
+          "description": "Native"
+        }
+      ],
+      "worksFor": [
+        {
+          "@type": "EmployeeRole",
+          "roleName": "Generative AI Engineer Apprentice",
+          "description": "Developed a declarative, config-driven graph workflow orchestration microservice, enabling dynamic workflow composition across a scalable and maintainable AI ecosystem. Built an automated Red Teaming framework for AI workflows, probing LLM behaviour across guardrails and targeted adversarial scenarios to strengthen model resilience.",
+          "worksFor": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-ca"
+          },
+          "startDate": "2025-09"
+        },
+        {
+          "@type": "EmployeeRole",
+          "roleName": "Natural Language Processing Intern",
+          "description": "Implemented a system that automates email classification and information extraction from attachments, using BERT and OCR to optimise efficiency and processing time. Developed a web application for BERT Fine-Tuning, email management, and real-time data analysis and visualisation, to enhance user interaction and performance monitoring.",
+          "worksFor": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-vermeg"
+          },
+          "startDate": "2024-02",
+          "endDate": "2024-06"
+        },
+        {
+          "@type": "EmployeeRole",
+          "roleName": "Machine Learning Intern",
+          "description": "Evaluated multiple deep reinforcement learning algorithms from Stable Baselines 3 across various Gymnasium environments to assess agent performance and training efficiency. Built a 2D grid game in Pygame where a Deep Q-Learning agent learns to navigate a dynamic environment, applying the best-performing algorithm from the benchmarking phase.",
+          "worksFor": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-sofiatech"
+          },
+          "startDate": "2023-06",
+          "endDate": "2023-08"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "@id": "https://makiz-code.github.io/MKirell/#org-supgalilee"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "@id": "https://makiz-code.github.io/MKirell/#org-isi"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Engineering Degree in Computer Science",
+          "recognizedBy": {
+            "@type": "CollegeOrUniversity",
+            "@id": "https://makiz-code.github.io/MKirell/#org-supgalilee"
+          },
+          "startDate": "2024",
+          "endDate": "2027"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Bachelor of Science in Computer Science",
+          "description": "High Distinction",
+          "recognizedBy": {
+            "@type": "CollegeOrUniversity",
+            "@id": "https://makiz-code.github.io/MKirell/#org-isi"
+          },
+          "startDate": "2021",
+          "endDate": "2024"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Tunisian Baccalaureate in Mathematics",
+          "recognizedBy": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-ibnrachik"
+          },
+          "startDate": "2021",
+          "endDate": "2021"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Spark and Python for Big Data with PySpark",
+          "recognizedBy": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-udemy"
+          },
+          "dateCreated": "2024-03"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Natural Language Processing with Python",
+          "recognizedBy": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-udemy"
+          },
+          "dateCreated": "2024-02"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Azure AI Fundamentals (AI-900)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-microsoft"
+          },
+          "dateCreated": "2024-01"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certification",
+          "name": "Azure Data Fundamentals (DP-900)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-microsoft"
+          },
+          "dateCreated": "2024-01"
+        }
+      ],
+      "award": [
+        "Enactus World Cup Vice Champions",
+        "Action With Africa Vice Champions",
+        "Ichmilni Race Tunisia Finalists",
+        "Hult Prize ISI Ariana Runner-up"
+      ],
+      "memberOf": [
+        {
+          "@type": "OrganizationRole",
+          "roleName": "Project Manager",
+          "description": "As Project Manager in Enactus's R&D unit, led my team to the Ichmilni Race finals, presenting AGRIVEST — a peer-to-peer lending platform promoting digital inclusion for smallholder farmers in rural Tunisia.",
+          "memberOf": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-enactus"
+          },
+          "startDate": "2021-09",
+          "endDate": "2024-08"
+        },
+        {
+          "@type": "OrganizationRole",
+          "roleName": "Team Member",
+          "description": "As a Team Member in AIESEC's Incoming Global Talent unit, negotiated partnerships with companies and educational institutions in Tunisia to secure internship opportunities for international exchange participants.",
+          "memberOf": {
+            "@type": "Organization",
+            "@id": "https://makiz-code.github.io/MKirell/#org-aiesec"
+          },
+          "startDate": "2024-02",
+          "endDate": "2024-07"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-cvision",
+      "name": "CVision",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Created an intelligent CV recommendation system based on job description using Retrieval-Augmented Generation (RAG), to optimise the selection and automatic ranking of the most relevant profiles.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Advanced RAG, Re-Ranking, LangChain, Qwen3-VL, Qdrant, Python/Streamlit",
+      "dateCreated": "2025-06",
+      "applicationSubCategory": "RAG"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-vermail",
+      "name": "VERMail",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Developed an end-to-end email intelligence platform combining fine-tuned BERT for multi-class classification and Tesseract OCR for attachment parsing, with a React dashboard for real-time monitoring.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "BERT Fine-Tuning, PyTorch, Tesseract OCR, Python/Flask, React/Redux, MongoDB",
+      "dateCreated": "2024-02",
+      "applicationSubCategory": "NLP · OCR"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-slythera",
+      "name": "Slythera",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Developed a 2D grid game in Pygame featuring an AI agent trained from scratch with Deep Q-Learning to autonomously navigate obstacles and maximise its score in a dynamic, progressively challenging environment.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Reinforcement Learning, TensorFlow/Keras, Gymnasium, NumPy, Pandas, Python/Pygame",
+      "dateCreated": "2023-06",
+      "applicationSubCategory": "Deep RL"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-twixel",
+      "name": "TwiXel",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Designing an intelligent multi-agent system for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Multi-Agent Systems, LangGraph, MCP/A2A, GPT-OSS, Qdrant, Python/FastAPI, Vue.js",
+      "dateCreated": "2026",
+      "applicationSubCategory": "Multi-Agent"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-aerovi",
+      "name": "AeroVI",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Designing a multimodal travel guide that generates personalised travel itineraries, curated destination recommendations, and immersive visual content — covering the full journey from planning to discovery.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Curation, Advanced RAG, Multimodal LLM, Visual Generation, Knowledge Graph",
+      "dateCreated": "2026",
+      "applicationSubCategory": "Multimodal AI"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://makiz-code.github.io/MKirell/#project-planyu",
+      "name": "PlanYU",
+      "author": { "@id": "https://makiz-code.github.io/MKirell/#person" },
+      "description": "Designing a generative project management platform that produces complete project structures — tasks, schedules, and assignments — pairing team members to each task based on their skills and availability.",
+      "applicationCategory": "Artificial Intelligence",
+      "operatingSystem": "Linux",
+      "keywords": "Delegation, LLM Planning, Skill Matching, Agentic Workflows, Task Decomposition",
+      "dateCreated": "2026",
+      "applicationSubCategory": "Agentic · PM"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-microsoft",
+      "name": "Microsoft"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-udemy",
+      "name": "Udemy"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-ca",
+      "name": "Crédit Agricole Personal Finance & Mobility"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-vermeg",
+      "name": "VERMEG for Banking & Insurance Software"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-sofiatech",
+      "name": "Sofiatech"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-enactus",
+      "name": "Enactus"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-aiesec",
+      "name": "AIESEC"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://makiz-code.github.io/MKirell/#org-supgalilee",
+      "name": "Sup Galilée, Université Sorbonne Paris Nord",
+      "sameAs": "https://www.linkedin.com/school/université-sorbonne-paris-nord/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://makiz-code.github.io/MKirell/#org-isi",
+      "name": "ISI Ariana, Université de Tunis El Manar",
+      "sameAs": "https://www.linkedin.com/school/university-of-tunis-el-manar/"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://makiz-code.github.io/MKirell/#org-ibnrachik",
+      "name": "Ibn Rachik High School",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ezzahra",
+        "addressCountry": "TN"
+      }
+    }
+  ]
+}

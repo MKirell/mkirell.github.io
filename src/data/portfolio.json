@@ -1,0 +1,1033 @@
+﻿{
+  "person": {
+    "name": "Mohamed Khalil Zrelly",
+    "givenName": "Mohamed Khalil",
+    "familyName": "Zrelly",
+    "email": "mohamed.khalil.zrelly@gmail.com",
+    "phone": "+33758215856",
+    "phoneDisplay": "+33 7 58 21 58 56",
+    "linkedin": "https://www.linkedin.com/in/mohamed-khalil-zrelly/",
+    "url": "https://makiz-code.github.io/MKirell",
+    "jobTitle": "Generative AI Engineer Apprentice",
+    "worksFor": "Crédit Agricole",
+    "description": "Generative AI Engineer Apprentice at Crédit Agricole, specializing in agentic systems, RAG pipelines, and LLM architectures. Computer Science Engineering student at Sup Galilée — Sorbonne Paris North University.",
+    "alumniOf": "Sorbonne Paris North University",
+    "addressLocality": "Le Bourget",
+    "addressRegion": "Île-de-France",
+    "addressCountry": "FR",
+    "resumeEn": "resume_en_mkzrelly.pdf",
+    "resumeFr": "resume_fr_mkzrelly.pdf"
+  },
+  "docs": {
+    "experience": [
+      null,
+      "internship-cert-vermeg.pdf",
+      "internship-cert-sofiatech.pdf"
+    ],
+    "experienceLinks": [
+      "https://www.linkedin.com/company/credit-agricole-personal-finance-mobility/",
+      "https://www.linkedin.com/company/vermeg/",
+      "https://www.linkedin.com/company/sofiatech-tn/"
+    ],
+    "degrees": [
+      null,
+      "degree-bachelor-2024.pdf",
+      "degree-baccalaureate-2021.pdf"
+    ],
+    "certs": [
+      "certificate-pyspark-udemy.pdf",
+      "certificate-nlp-python.pdf",
+      "certificate-azure-ai900.pdf",
+      "certificate-azure-dp900.pdf"
+    ],
+    "vols": [null, null],
+    "volLinks": [
+      "https://www.linkedin.com/company/enactus/",
+      "https://www.linkedin.com/company/aiesec/"
+    ],
+    "projectLinks": [
+      "https://github.com/makiz-code/CVision",
+      "https://github.com/makiz-code/VERMail",
+      "https://github.com/makiz-code/Slythera",
+      null,
+      null,
+      null
+    ],
+    "awards": [null, null, null, null],
+    "languages": [null, "certificate-french-tcf.pdf", null]
+  },
+  "metaLocales": [
+    {
+      "lang": "en",
+      "dir": "ltr",
+      "label": "EN",
+      "flag": "🇬🇧",
+      "flagCode": "gb",
+      "hreflang": "en"
+    },
+    {
+      "lang": "fr",
+      "dir": "ltr",
+      "label": "FR",
+      "flag": "🇫🇷",
+      "flagCode": "fr",
+      "hreflang": "fr"
+    }
+  ],
+  "locales": {
+    "en": {
+      "nav": {
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "education": "Education",
+        "contact": "Contact"
+      },
+      "hero": {
+        "title": "Mohamed Khalil Zrelly",
+        "subtitles": [
+          "Generative AI Engineer Apprentice",
+          "Agentic Systems Architect",
+          "RAG & LLM Specialist",
+          "Multi-Agent Systems Builder"
+        ],
+        "cardRole": "Generative AI Engineer",
+        "desc": "Passionate about **Generative AI** and **Agentic Systems**, with a strong foundation in algorithms and problem solving — driven to build innovative AI solutions and grow through every project.",
+        "cta_projects": "View my projects",
+        "cta_contact": "Get in touch",
+        "card": {
+          "jobTitle": "jobTitle",
+          "worksFor": "worksFor",
+          "location": "location",
+          "languages": "languages"
+        }
+      },
+      "about": {
+        "heading": "About Me",
+        "paragraphs": [
+          "I'm a Computer Science Engineering student at **Sup Galilée — Sorbonne Paris North University**, working as a **Generative AI Engineer Apprentice at Crédit Agricole**. I'm passionate about **Generative AI** and **Agentic Systems**, and my goal is to keep strengthening my skills while contributing to innovative AI projects.",
+          "My background spans **machine learning**, **deep learning**, and **natural language processing**, built through internships and personal projects. I enjoy the full cycle — from experimenting with models to shipping things that actually work.",
+          "Outside of work and studies, I was involved in **Enactus** and **AIESEC**, where I contributed to social entrepreneurship and international exchange — driven by the same curiosity and commitment I bring to every technical challenge."
+        ],
+        "stats": [
+          {
+            "num": "1.5+",
+            "label": "years of experience",
+            "anchor": "#experience"
+          },
+          {
+            "num": "6",
+            "label": "personal projects",
+            "anchor": "#projects"
+          },
+          {
+            "num": "4",
+            "label": "professional certifications",
+            "anchor": "#education"
+          },
+          {
+            "num": "3",
+            "label": "languages spoken",
+            "anchor": "#skills"
+          }
+        ]
+      },
+      "skills": {
+        "heading": "Technical Skills",
+        "categories": [
+          {
+            "icon": "🧠",
+            "title": "Machine Learning, DL & MLOps",
+            "accent": false,
+            "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
+            "tags": [
+              "PyTorch",
+              "TensorFlow",
+              "Sklearn",
+              "XGBoost",
+              "Amazon SageMaker"
+            ]
+          },
+          {
+            "icon": "🤖",
+            "title": "Generative AI & Agentic Systems",
+            "accent": false,
+            "accentTags": ["LangGraph", "Qdrant", "Amazon Bedrock"],
+            "tags": [
+              "LangChain",
+              "LangGraph",
+              "Milvus",
+              "Qdrant",
+              "Amazon Bedrock"
+            ]
+          },
+          {
+            "icon": "📊",
+            "title": "Data Analysis & Engineering",
+            "accent": false,
+            "accentTags": ["Pandas", "Matplotlib", "PySpark", "Amazon S3"],
+            "tags": [
+              "Pandas",
+              "Matplotlib",
+              "PySpark",
+              "Apache Airflow",
+              "Amazon S3"
+            ]
+          },
+          {
+            "icon": "🗄️",
+            "title": "SQL & NoSQL Databases",
+            "accent": false,
+            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
+            "tags": [
+              "Oracle",
+              "MySQL",
+              "PostgreSQL",
+              "MongoDB",
+              "Amazon DynamoDB"
+            ]
+          },
+          {
+            "icon": "🌐",
+            "title": "Full-Stack Web Development",
+            "accent": false,
+            "accentTags": ["React", "Vue.js", "FastAPI", "Flask"],
+            "tags": [
+              "FastAPI",
+              "Flask",
+              "Express.js",
+              "Laravel",
+              "React",
+              "Vue.js"
+            ]
+          },
+          {
+            "icon": "🧪",
+            "title": "Version Control, Testing & QA",
+            "accent": false,
+            "accentTags": ["Git", "GitHub", "Postman"],
+            "tags": [
+              "Git",
+              "GitHub",
+              "Pytest",
+              "Jest",
+              "Vitest",
+              "Playwright",
+              "Postman"
+            ]
+          },
+          {
+            "icon": "☁️",
+            "title": "Cloud Infrastructure & DevOps",
+            "accent": false,
+            "accentTags": ["AWS", "Docker", "GitHub Actions"],
+            "tags": [
+              "AWS",
+              "Docker",
+              "Kubernetes",
+              "Terraform",
+              "GitHub Actions"
+            ]
+          },
+          {
+            "icon": "💻",
+            "title": "Programming Languages (PL)",
+            "accent": false,
+            "accentTags": ["Python", "JavaScript/TS"],
+            "tags": [
+              "Python",
+              "JavaScript/TS",
+              "PHP",
+              "Java",
+              "C/C++",
+              "PL/SQL"
+            ]
+          }
+        ],
+        "lang_title": "Languages",
+        "languages": [
+          {
+            "flag": "🇬🇧",
+            "flagCode": "gb",
+            "name": "English",
+            "pct": 80,
+            "level": "B2 · TOEIC"
+          },
+          {
+            "flag": "🇫🇷",
+            "flagCode": "fr",
+            "name": "French",
+            "pct": 80,
+            "level": "B2 · TCF"
+          },
+          {
+            "flag": "🇹🇳",
+            "flagCode": "tn",
+            "name": "Arabic",
+            "pct": 100,
+            "level": "Native"
+          }
+        ]
+      },
+      "experience": {
+        "heading": "Work Experience",
+        "current_label": "Ongoing",
+        "jobs": [
+          {
+            "current": true,
+            "company": "Crédit Agricole Personal Finance & Mobility",
+            "period": "09/2025 — Present · 10 months · France",
+            "role": "Generative AI Engineer Apprentice",
+            "bullets": [
+              "Developed a declarative, config-driven **graph workflow orchestration** microservice, enabling dynamic workflow composition across a scalable and maintainable AI ecosystem.",
+              "Built an automated **Red Teaming** framework for AI workflows, probing **LLM behaviour** across guardrails and targeted adversarial scenarios to strengthen model resilience."
+            ],
+            "tags": [
+              "Agentic Workflows",
+              "Advanced RAG",
+              "Amazon Bedrock",
+              "AI Guardrails",
+              "LLM Observability",
+              "System Architecture",
+              "Python/FastAPI",
+              "Amazon DynamoDB"
+            ]
+          },
+          {
+            "current": false,
+            "company": "VERMEG for Banking & Insurance Software",
+            "period": "02/2024 — 06/2024 · 5 months · Tunisia",
+            "role": "Natural Language Processing Intern",
+            "bullets": [
+              "Implemented a system that automates email classification and information extraction from attachments, using **BERT** and **OCR** to optimise efficiency and processing time.",
+              "Developed a web application for **BERT Fine-Tuning**, email management, and real-time data analysis and visualisation, to enhance user interaction and performance monitoring."
+            ],
+            "tags": [
+              "Hugging Face Transformers",
+              "Sentence-Transformers",
+              "Fine-Tuning",
+              "PyTorch",
+              "Tesseract OCR",
+              "Python/Flask",
+              "React/Redux",
+              "Bootstrap",
+              "MongoDB"
+            ]
+          },
+          {
+            "current": false,
+            "company": "Sofiatech",
+            "period": "06/2023 — 08/2023 · 3 months · Tunisia",
+            "role": "Machine Learning Intern",
+            "bullets": [
+              "Evaluated multiple **deep reinforcement learning** algorithms from **Stable Baselines 3** across various **Gymnasium** environments to assess agent performance and training efficiency.",
+              "Built a **2D grid game** in **Pygame** where a **Deep Q-Learning** agent learns to navigate a dynamic environment, applying the best-performing algorithm from the benchmarking phase."
+            ],
+            "tags": [
+              "Reinforcement Learning",
+              "Deep Q-Learning",
+              "stable-baselines3",
+              "TensorFlow/Keras",
+              "Gymnasium",
+              "NumPy",
+              "Pandas",
+              "Matplotlib",
+              "Python/Pygame"
+            ]
+          }
+        ]
+      },
+      "projects": {
+        "heading": "Featured Projects",
+        "items": [
+          {
+            "period": "06/2025 — 08/2025",
+            "duration": "3 months",
+            "badge": "RAG",
+            "title": "CVision",
+            "desc": "Created an intelligent **CV recommendation system** based on job description using **Retrieval-Augmented Generation (RAG)**, to optimise the selection and automatic ranking of the most relevant profiles.",
+            "tags": [
+              "Advanced RAG",
+              "Re-Ranking",
+              "LangChain",
+              "Qwen3-VL",
+              "Qdrant",
+              "Python/Streamlit"
+            ]
+          },
+          {
+            "period": "02/2024 — 06/2024",
+            "duration": "5 months",
+            "badge": "NLP · OCR",
+            "title": "VERMail",
+            "desc": "Developed an end-to-end **email intelligence platform** combining fine-tuned **BERT** for multi-class classification and **Tesseract OCR** for attachment parsing, with a **React** dashboard for real-time monitoring.",
+            "tags": [
+              "BERT Fine-Tuning",
+              "PyTorch",
+              "Tesseract OCR",
+              "Python/Flask",
+              "React/Redux",
+              "MongoDB"
+            ]
+          },
+          {
+            "period": "06/2023 — 08/2023",
+            "duration": "3 months",
+            "badge": "Deep RL",
+            "title": "Slythera",
+            "desc": "Developed a **2D grid game** in **Pygame** featuring an AI agent trained from scratch with **Deep Q-Learning** to autonomously navigate obstacles and maximise its score in a dynamic, progressively challenging environment.",
+            "tags": [
+              "Reinforcement Learning",
+              "TensorFlow/Keras",
+              "Gymnasium",
+              "NumPy",
+              "Pandas",
+              "Python/Pygame"
+            ]
+          },
+          {
+            "period": "In Development ~ 2026",
+            "badge": "Multi-Agent",
+            "title": "TwiXel",
+            "desc": "Designing an intelligent **multi-agent system** for automated social listening on Twitter (now X), aimed at identifying emerging trends in real time and generating actionable marketing campaign ideas at scale.",
+            "tags": [
+              "Multi-Agent Systems",
+              "LangGraph",
+              "MCP/A2A",
+              "GPT-OSS",
+              "Qdrant",
+              "Python/FastAPI",
+              "Vue.js"
+            ]
+          },
+          {
+            "period": "In Ideation ~ 2026",
+            "badge": "Multimodal AI",
+            "title": "AeroVI",
+            "desc": "Designing a **multimodal travel guide** that generates personalised travel itineraries, curated destination recommendations, and immersive visual content — covering the full journey from planning to discovery.",
+            "tags": [
+              "Curation",
+              "Advanced RAG",
+              "Multimodal LLM",
+              "Visual Generation",
+              "Knowledge Graph"
+            ]
+          },
+          {
+            "period": "In Ideation ~ 2026",
+            "badge": "Agentic · PM",
+            "title": "PlanYU",
+            "desc": "Designing a **generative project management platform** that produces complete project structures — tasks, schedules, and assignments — pairing team members to each task based on their skills and availability.",
+            "tags": [
+              "Delegation",
+              "LLM Planning",
+              "Skill Matching",
+              "Agentic Workflows",
+              "Task Decomposition"
+            ]
+          }
+        ]
+      },
+      "education": {
+        "heading": "Education & Certifications",
+        "degrees_title": "Degrees",
+        "degrees": [
+          {
+            "years": "2024 — 2027",
+            "title": "Engineering Degree in Computer Science",
+            "school": "Sup Galilée – Sorbonne Paris North University",
+            "link": "https://www.linkedin.com/school/université-sorbonne-paris-nord/",
+            "location": "Villetaneuse, France",
+            "mention": null
+          },
+          {
+            "years": "2021 — 2024",
+            "title": "Bachelor of Science in Computer Science",
+            "school": "ISI Ariana – University of Tunis El Manar",
+            "link": "https://www.linkedin.com/school/university-of-tunis-el-manar/",
+            "location": "Ariana, Tunisia",
+            "mention": "High Distinction ✦"
+          },
+          {
+            "years": "2021",
+            "title": "Tunisian Baccalaureate in Mathematics",
+            "school": "Ibn Rachik Ezzahra High School",
+            "location": "Ezzahra, Tunisia",
+            "mention": null
+          }
+        ],
+        "certs_title": "Certifications",
+        "certs": [
+          {
+            "icon": "⚡",
+            "title": "Spark and Python for Big Data with PySpark",
+            "issuer": "Udemy",
+            "date": "Mar 2024"
+          },
+          {
+            "icon": "💬",
+            "title": "Natural Language Processing with Python",
+            "issuer": "Udemy",
+            "date": "Feb 2024"
+          },
+          {
+            "icon": "☁️",
+            "title": "Azure AI Fundamentals (AI-900)",
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
+          },
+          {
+            "icon": "📊",
+            "title": "Azure Data Fundamentals (DP-900)",
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
+          }
+        ],
+        "vol_title": "Volunteering",
+        "vols": [
+          {
+            "org": "Enactus",
+            "role": "Project Manager",
+            "period": "09/2021 — 08/2024 · 3 years",
+            "desc": "As Project Manager in Enactus's R&D unit, I led my team to the Ichmilni Race finals, presenting **AGRIVEST** — a peer-to-peer lending platform promoting digital inclusion for smallholder farmers in rural Tunisia."
+          },
+          {
+            "org": "AIESEC",
+            "role": "Team Member",
+            "period": "02/2024 — 07/2024 · 6 months",
+            "desc": "As a Team Member in AIESEC's Incoming Global Talent unit, I negotiated partnerships with companies and educational institutions in Tunisia to secure internship opportunities for international exchange participants."
+          }
+        ],
+        "awards_title": "Awards",
+        "awards": [
+          {
+            "icon": "🏆",
+            "title": "Enactus World Cup Vice Champions",
+            "place": "Puerto Rico",
+            "flagCode": "pr",
+            "images": [
+              "award-ewc-2022-1.jpg",
+              "award-ewc-2022-2.jpg",
+              "award-ewc-2022-3.jpg",
+              "award-ewc-2022-4.jpg"
+            ]
+          },
+          {
+            "icon": "🏆",
+            "title": "Action With Africa Vice Champions",
+            "place": "Netherlands",
+            "flagCode": "nl",
+            "images": [
+              "award-awa-2023-1.jpg",
+              "award-awa-2023-2.jpg",
+              "award-awa-2023-3.jpg",
+              "award-awa-2023-4.jpg"
+            ]
+          },
+          {
+            "icon": "🏅",
+            "title": "Ichmilni Race Tunisia Finalists",
+            "place": "Tunisia",
+            "flagCode": "tn"
+          },
+          {
+            "icon": "🥈",
+            "title": "Hult Prize ISI Ariana Runner-up",
+            "place": "Tunisia",
+            "flagCode": "tn"
+          }
+        ]
+      },
+      "contact": {
+        "heading": "Let's work together",
+        "desc": "Currently working as a **Gen AI Engineer Apprentice at Crédit Agricole**. Feel free to reach out to discuss AI projects, collaborations, or just to connect.",
+        "email_label": "Email",
+        "phone_label": "Phone",
+        "linkedin_label": "LinkedIn",
+        "location_label": "Location",
+        "cta": "Send me a message →"
+      },
+      "footer": {
+        "copy": "© 2026 Mohamed Khalil Zrelly · Built with passion"
+      }
+    },
+    "fr": {
+      "nav": {
+        "about": "À propos",
+        "skills": "Compétences",
+        "experience": "Expérience",
+        "projects": "Projets",
+        "education": "Formation",
+        "contact": "Contact"
+      },
+      "hero": {
+        "title": "Mohamed Khalil Zrelly",
+        "subtitles": [
+          "Apprenti Ingénieur en IA Générative",
+          "Architecte de Systèmes Agentiques",
+          "Spécialiste RAG & LLM",
+          "Concepteur de Systèmes Multi-Agents"
+        ],
+        "cardRole": "Ingénieur IA Générative",
+        "desc": "Passionné par l'**IA Générative** et les **Systèmes Agentiques**, avec de solides bases en algorithmique et en résolution de problèmes — déterminé à construire des solutions IA innovantes et à progresser à travers chaque projet.",
+        "cta_projects": "Voir mes projets",
+        "cta_contact": "Me contacter",
+        "card": {
+          "jobTitle": "poste",
+          "worksFor": "employeur",
+          "location": "localisation",
+          "languages": "langues"
+        }
+      },
+      "about": {
+        "heading": "À propos de moi",
+        "paragraphs": [
+          "Étudiant en ingénierie informatique à **Sup Galilée — Université Sorbonne Paris Nord**, je travaille en alternance comme **Apprenti Ingénieur IA Générative chez Crédit Agricole**. Passionné par l'**IA Générative** et les **Systèmes Agentiques**, mon objectif est d'approfondir mes compétences tout en contribuant à des projets IA innovants.",
+          "Mon parcours couvre le **machine learning**, le **deep learning** et le **traitement automatique du langage naturel**, forgé au fil de stages et de projets personnels. J'apprécie tout le cycle — de l'expérimentation avec les modèles jusqu'à livrer des solutions qui fonctionnent réellement.",
+          "En dehors du travail et des études, je me suis investi dans **Enactus** et **AIESEC**, où j'ai contribué à l'entrepreneuriat social et aux échanges internationaux — animé par la même curiosité et le même engagement que j'apporte à chaque défi technique."
+        ],
+        "stats": [
+          {
+            "num": "1.5+",
+            "label": "années d'expérience",
+            "anchor": "#experience"
+          },
+          {
+            "num": "6",
+            "label": "projets personnels",
+            "anchor": "#projects"
+          },
+          {
+            "num": "4",
+            "label": "certifications professionnelles",
+            "anchor": "#education"
+          },
+          {
+            "num": "3",
+            "label": "langues parlées",
+            "anchor": "#skills"
+          }
+        ]
+      },
+      "skills": {
+        "heading": "Compétences Techniques",
+        "categories": [
+          {
+            "icon": "🧠",
+            "title": "Machine Learning, DL & MLOps",
+            "accent": false,
+            "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
+            "tags": [
+              "PyTorch",
+              "TensorFlow",
+              "Sklearn",
+              "XGBoost",
+              "Amazon SageMaker"
+            ]
+          },
+          {
+            "icon": "🤖",
+            "title": "IA Générative & Agentiques",
+            "accent": false,
+            "accentTags": ["LangGraph", "Qdrant", "Amazon Bedrock"],
+            "tags": [
+              "LangChain",
+              "LangGraph",
+              "Milvus",
+              "Qdrant",
+              "Amazon Bedrock"
+            ]
+          },
+          {
+            "icon": "📊",
+            "title": "Analyse & Ingénierie Data",
+            "accent": false,
+            "accentTags": ["Pandas", "Matplotlib", "PySpark", "Amazon S3"],
+            "tags": [
+              "Pandas",
+              "Matplotlib",
+              "PySpark",
+              "Apache Airflow",
+              "Amazon S3"
+            ]
+          },
+          {
+            "icon": "🗄️",
+            "title": "Bases de données SQL et NoSQL",
+            "accent": false,
+            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
+            "tags": [
+              "Oracle",
+              "MySQL",
+              "PostgreSQL",
+              "MongoDB",
+              "Amazon DynamoDB"
+            ]
+          },
+          {
+            "icon": "🌐",
+            "title": "Développement Web Full-Stack",
+            "accent": false,
+            "accentTags": ["React", "Vue.js", "FastAPI", "Flask"],
+            "tags": [
+              "FastAPI",
+              "Flask",
+              "Express.js",
+              "Laravel",
+              "React",
+              "Vue.js"
+            ]
+          },
+          {
+            "icon": "🧪",
+            "title": "Contrôle de Version, Tests & QA",
+            "accent": false,
+            "accentTags": ["Git", "GitHub", "Postman"],
+            "tags": [
+              "Git",
+              "GitHub",
+              "Pytest",
+              "Jest",
+              "Vitest",
+              "Playwright",
+              "Postman"
+            ]
+          },
+          {
+            "icon": "☁️",
+            "title": "Cloud Infrastructure & DevOps",
+            "accent": false,
+            "accentTags": ["AWS", "Docker", "GitHub Actions"],
+            "tags": [
+              "AWS",
+              "Docker",
+              "Kubernetes",
+              "Terraform",
+              "GitHub Actions"
+            ]
+          },
+          {
+            "icon": "💻",
+            "title": "Langages de Programmation",
+            "accent": false,
+            "accentTags": ["Python", "JavaScript/TS"],
+            "tags": [
+              "Python",
+              "JavaScript/TS",
+              "PHP",
+              "Java",
+              "C/C++",
+              "PL/SQL"
+            ]
+          }
+        ],
+        "lang_title": "Langues",
+        "languages": [
+          {
+            "flag": "🇬🇧",
+            "flagCode": "gb",
+            "name": "Anglais",
+            "pct": 80,
+            "level": "B2 · TOEIC"
+          },
+          {
+            "flag": "🇫🇷",
+            "flagCode": "fr",
+            "name": "Français",
+            "pct": 80,
+            "level": "B2 · TCF"
+          },
+          {
+            "flag": "🇹🇳",
+            "flagCode": "tn",
+            "name": "Arabe",
+            "pct": 100,
+            "level": "Natif"
+          }
+        ]
+      },
+      "experience": {
+        "heading": "Expériences Professionnelles",
+        "current_label": "En poste",
+        "jobs": [
+          {
+            "current": true,
+            "company": "Crédit Agricole Personal Finance & Mobility",
+            "period": "09/2025 — En cours · 10 mois · France",
+            "role": "Apprenti Ingénieur IA Générative",
+            "bullets": [
+              "Développement d'un microservice déclaratif et piloté par configuration pour l'**orchestration et l'exécution de workflows en graphe**, permettant une composition dynamique au sein d'un écosystème IA scalable et maintenable.",
+              "Développement d'un framework de **Red Teaming** automatisé pour les workflows IA, sondant le **comportement des LLMs** à travers les guardrails et des scénarios adversariaux ciblés pour renforcer la résilience des modèles."
+            ],
+            "tags": [
+              "Agentic Workflows",
+              "Advanced RAG",
+              "Amazon Bedrock",
+              "AI Guardrails",
+              "LLM Observability",
+              "System Architecture",
+              "Python/FastAPI",
+              "Amazon DynamoDB"
+            ]
+          },
+          {
+            "current": false,
+            "company": "VERMEG for Banking & Insurance Software",
+            "period": "02/2024 — 06/2024 · 5 mois · Tunisie",
+            "role": "Stagiaire en Traitement du Langage Naturel",
+            "bullets": [
+              "Implémentation d'un système automatisant la classification des e-mails et l'extraction d'informations des pièces jointes, avec **BERT** et **OCR** pour optimiser l'efficacité et le temps de traitement.",
+              "Développement d'une application web pour le **Fine-Tuning BERT**, la gestion des e-mails, l'analyse et la visualisation des données en temps réel, pour améliorer l'interaction utilisateur et le suivi des performances."
+            ],
+            "tags": [
+              "Hugging Face Transformers",
+              "Sentence-Transformers",
+              "Fine-Tuning",
+              "PyTorch",
+              "Tesseract OCR",
+              "Python/Flask",
+              "React/Redux",
+              "Bootstrap",
+              "MongoDB"
+            ]
+          },
+          {
+            "current": false,
+            "company": "Sofiatech",
+            "period": "06/2023 — 08/2023 · 3 mois · Tunisie",
+            "role": "Stagiaire en Machine Learning",
+            "bullets": [
+              "Évaluation de plusieurs algorithmes d'**apprentissage par renforcement profond** issus de **Stable Baselines 3** dans différents environnements **Gymnasium** pour évaluer les performances des agents et l'efficacité de l'entraînement.",
+              "Développement d'un **jeu de grille 2D** en **Pygame** où un agent **Deep Q-Learning** apprend à naviguer dans un environnement dynamique, en appliquant l'algorithme le plus performant issu de la phase de benchmarking."
+            ],
+            "tags": [
+              "Reinforcement Learning",
+              "Deep Q-Learning",
+              "stable-baselines3",
+              "TensorFlow/Keras",
+              "Gymnasium",
+              "NumPy",
+              "Pandas",
+              "Matplotlib",
+              "Python/Pygame"
+            ]
+          }
+        ]
+      },
+      "projects": {
+        "heading": "Projets Phares",
+        "items": [
+          {
+            "period": "06/2025 — 08/2025",
+            "duration": "3 mois",
+            "badge": "RAG",
+            "title": "CVision",
+            "desc": "Création d'un **système de recommandation de CV** basé sur les descriptions de postes, via la **Génération Augmentée par Récupération (RAG)**, pour optimiser la sélection et le classement automatique des profils pertinents.",
+            "tags": [
+              "Advanced RAG",
+              "Re-Ranking",
+              "LangChain",
+              "Qwen3-VL",
+              "Qdrant",
+              "Python/Streamlit"
+            ]
+          },
+          {
+            "period": "02/2024 — 06/2024",
+            "duration": "5 mois",
+            "badge": "NLP · OCR",
+            "title": "VERMail",
+            "desc": "Développement d'une **plateforme e-mail intelligente** combinant **BERT** fine-tuné pour la classification multi-classes et **Tesseract OCR** pour l'analyse des pièces jointes, avec un tableau de bord **React** pour la surveillance en temps réel.",
+            "tags": [
+              "BERT Fine-Tuning",
+              "PyTorch",
+              "Tesseract OCR",
+              "Python/Flask",
+              "React/Redux",
+              "MongoDB"
+            ]
+          },
+          {
+            "period": "06/2023 — 08/2023",
+            "duration": "3 mois",
+            "badge": "Deep RL",
+            "title": "Slythera",
+            "desc": "Développement d'un **jeu de grille 2D** en **Pygame** où un agent **Deep Q-Learning** navigue parmi les obstacles et maximise son score dans un environnement dynamique et progressivement exigeant.",
+            "tags": [
+              "Reinforcement Learning",
+              "TensorFlow/Keras",
+              "Gymnasium",
+              "NumPy",
+              "Pandas",
+              "Python/Pygame"
+            ]
+          },
+          {
+            "period": "En développement ~ 2026",
+            "badge": "Multi-Agent",
+            "title": "TwiXel",
+            "desc": "Conception d'un **système multi-agents** pour l'écoute sociale automatisée sur Twitter (X), visant à identifier les tendances émergentes en temps réel et à générer des idées de campagnes marketing exploitables à grande échelle.",
+            "tags": [
+              "Multi-Agent Systems",
+              "LangGraph",
+              "MCP/A2A",
+              "GPT-OSS",
+              "Qdrant",
+              "Python/FastAPI",
+              "Vue.js"
+            ]
+          },
+          {
+            "period": "En idéation ~ 2026",
+            "badge": "IA Multimodale",
+            "title": "AeroVI",
+            "desc": "Conception d'un **guide de voyage multimodal** générant des itinéraires personnalisés, des recommandations de destinations sélectionnées et un contenu visuel immersif — couvrant l'intégralité du voyage, de la planification à la découverte.",
+            "tags": [
+              "Curation",
+              "Advanced RAG",
+              "Multimodal LLM",
+              "Visual Generation",
+              "Knowledge Graph"
+            ]
+          },
+          {
+            "period": "En idéation ~ 2026",
+            "badge": "Agentique · PM",
+            "title": "PlanYU",
+            "desc": "Conception d'une **plateforme de gestion de projet générative** produisant des structures complètes — tâches, plannings et affectations — en associant les membres de l'équipe selon leurs compétences et disponibilités.",
+            "tags": [
+              "Delegation",
+              "LLM Planning",
+              "Skill Matching",
+              "Agentic Workflows",
+              "Task Decomposition"
+            ]
+          }
+        ]
+      },
+      "education": {
+        "heading": "Formation & Certifications",
+        "degrees_title": "Diplômes",
+        "degrees": [
+          {
+            "years": "2024 — 2027",
+            "title": "Diplôme d'Ingénieur en Informatique",
+            "school": "Sup Galilée – Université Sorbonne Paris Nord",
+            "link": "https://www.linkedin.com/school/université-sorbonne-paris-nord/",
+            "location": "Villetaneuse, France",
+            "mention": null
+          },
+          {
+            "years": "2021 — 2024",
+            "title": "Licence en Informatique",
+            "school": "ISI Ariana – Université de Tunis El Manar",
+            "link": "https://www.linkedin.com/school/university-of-tunis-el-manar/",
+            "location": "Ariana, Tunisie",
+            "mention": "Mention Très Bien ✦"
+          },
+          {
+            "years": "2021",
+            "title": "Baccalauréat Tunisien en Mathématiques",
+            "school": "Lycée Ibn Rachik Ezzahra",
+            "location": "Ezzahra, Tunisie",
+            "mention": null
+          }
+        ],
+        "certs_title": "Certifications",
+        "certs": [
+          {
+            "icon": "⚡",
+            "title": "Spark and Python for Big Data with PySpark",
+            "issuer": "Udemy",
+            "date": "Mar 2024"
+          },
+          {
+            "icon": "💬",
+            "title": "Natural Language Processing with Python",
+            "issuer": "Udemy",
+            "date": "Fév 2024"
+          },
+          {
+            "icon": "☁️",
+            "title": "Azure AI Fundamentals (AI-900)",
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
+          },
+          {
+            "icon": "📊",
+            "title": "Azure Data Fundamentals (DP-900)",
+            "issuer": "Microsoft Azure",
+            "date": "Jan 2024"
+          }
+        ],
+        "vol_title": "Bénévolat",
+        "vols": [
+          {
+            "org": "Enactus",
+            "role": "Chef de Projet",
+            "period": "09/2021 — 08/2024 · 3 ans",
+            "desc": "Chef de Projet dans l'unité R&D d'Enactus, j'ai mené mon équipe en finale de l'Ichmilni Race en présentant **AGRIVEST** — une plateforme de prêt entre pairs pour l'inclusion numérique des petits agriculteurs en Tunisie rurale."
+          },
+          {
+            "org": "AIESEC",
+            "role": "Membre",
+            "period": "02/2024 — 07/2024 · 6 mois",
+            "desc": "Au sein de l'unité Incoming Global Talent d'AIESEC, j'ai négocié des partenariats avec des entreprises et institutions éducatives en Tunisie pour obtenir des stages pour les participants aux échanges internationaux."
+          }
+        ],
+        "awards_title": "Récompenses",
+        "awards": [
+          {
+            "icon": "🏆",
+            "title": "Enactus World Cup Vice-champions",
+            "place": "Porto Rico",
+            "flagCode": "pr",
+            "images": [
+              "award-ewc-2022-1.jpg",
+              "award-ewc-2022-2.jpg",
+              "award-ewc-2022-3.jpg",
+              "award-ewc-2022-4.jpg"
+            ]
+          },
+          {
+            "icon": "🏆",
+            "title": "Action With Africa Vice-champions",
+            "place": "Pays-Bas",
+            "flagCode": "nl",
+            "images": [
+              "award-awa-2023-1.jpg",
+              "award-awa-2023-2.jpg",
+              "award-awa-2023-3.jpg",
+              "award-awa-2023-4.jpg"
+            ]
+          },
+          {
+            "icon": "🏅",
+            "title": "Ichmilni Race Finalistes Tunisie",
+            "place": "Tunisie",
+            "flagCode": "tn"
+          },
+          {
+            "icon": "🥈",
+            "title": "Hult Prize ISI Ariana Vice-champion",
+            "place": "Tunisie",
+            "flagCode": "tn"
+          }
+        ]
+      },
+      "contact": {
+        "heading": "Travaillons ensemble",
+        "desc": "Actuellement apprenti **Ingénieur IA Générative chez Crédit Agricole**. N'hésitez pas à me contacter pour discuter de projets IA, de collaborations ou simplement pour échanger.",
+        "email_label": "E-mail",
+        "phone_label": "Téléphone",
+        "linkedin_label": "LinkedIn",
+        "location_label": "Localisation",
+        "cta": "M'envoyer un message →"
+      },
+      "footer": {
+        "copy": "© 2026 Mohamed Khalil Zrelly · Construit avec passion"
+      }
+    }
+  }
+}

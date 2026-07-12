@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://makiz-code.github.io/MKirell/sitemap.xml
