@@ -10,7 +10,7 @@
     "url": "https://makiz-code.github.io/MKirell",
     "jobTitle": "Generative AI Engineer Apprentice",
     "worksFor": "Crédit Agricole",
-    "description": "Generative AI Engineer Apprentice at Crédit Agricole, specializing in agentic systems, RAG pipelines, and LLM architectures. Computer Science Engineering student at Sup Galilée, Sorbonne Paris North University.",
+    "description": "Generative AI Engineer Apprentice at Crédit Agricole, specializing in agentic workflow orchestration. Computer Science Engineering student at Sup Galilée, Sorbonne Paris North University, with hands-on expertise in RAG, NLP, and reinforcement learning.",
     "alumniOf": "Sorbonne Paris North University",
     "addressLocality": "Le Bourget",
     "addressRegion": "Île-de-France",
@@ -300,8 +300,8 @@
             "period": "02/2024 — 06/2024 · 5 months · Tunisia",
             "role": "Natural Language Processing Intern",
             "bullets": [
-              "Implemented a system that automates email classification and information extraction from attachments, using fine-tuned **BERT** and **OCR** to improve accuracy and optimise processing.",
-              "Developed a web application for **BERT Fine-Tuning**, email management, and real-time data analysis and visualisation, enabling model management and performance monitoring."
+              "Implemented a system that automates email classification and information extraction from attachments, using fine-tuned **BERT** and **OCR** to improve accuracy and optimise efficiency.",
+              "Developed a web application for **BERT Fine-Tuning**, email management, and real-time data analysis and visualisation, enabling model experimentation and performance monitoring."
             ],
             "tags": [
               "Hugging Face Transformers",
@@ -777,8 +777,8 @@
             "period": "02/2024 — 06/2024 · 5 mois · Tunisie",
             "role": "Stagiaire en Traitement du Langage Naturel",
             "bullets": [
-              "Implémentation d'un système automatisant la classification des e-mails et l'extraction d'informations des pièces jointes, avec **BERT** fine-tuné et **OCR** pour améliorer la précision et optimiser le traitement.",
-              "Développement d'une application web pour le **Fine-Tuning BERT**, la gestion des e-mails, l'analyse et la visualisation des données en temps réel, permettant la gestion du modèle et le suivi des performances."
+              "Implémentation d'un système automatisant la classification des e-mails et l'extraction d'informations des pièces jointes, avec **BERT** fine-tuné et **OCR** pour améliorer la précision et optimiser l'efficacité.",
+              "Développement d'une application web pour le **Fine-Tuning BERT**, la gestion des e-mails, l'analyse et la visualisation des données en temps réel, permettant l'expérimentation du modèle et le suivi des performances."
             ],
             "tags": [
               "Hugging Face Transformers",

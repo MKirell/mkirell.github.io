@@ -110,7 +110,7 @@
         {
           "@type": "EmployeeRole",
           "roleName": "Natural Language Processing Intern",
-          "description": "Implemented a system that automates email classification and information extraction from attachments, using fine-tuned BERT and OCR to improve accuracy and optimise processing. Developed a web application for BERT Fine-Tuning, email management, and real-time data analysis and visualisation, enabling model management and performance monitoring.",
+          "description": "Implemented a system that automates email classification and information extraction from attachments, using fine-tuned BERT and OCR to improve accuracy and optimise efficiency. Developed a web application for BERT Fine-Tuning, email management, and real-time data analysis and visualisation, enabling model experimentation and performance monitoring.",
           "worksFor": {
             "@type": "Organization",
             "@id": "https://makiz-code.github.io/MKirell/#org-vermeg"
