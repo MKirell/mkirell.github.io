@@ -46,10 +46,10 @@
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
 import { docUrl } from '@/utils/docs.js'
-import { Paperclip, Brain, Bot, BarChart3, Database, Globe, FlaskConical, Cloud, Code2 } from '@lucide/vue'
+import { Paperclip, Brain, Bot, Activity, BarChart3, Database, Globe, Cloud, Code2 } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
 
-const icons = { Brain, Bot, BarChart3, Database, Globe, FlaskConical, Cloud, Code2 }
+const icons = { Brain, Bot, Activity, BarChart3, Database, Globe, Cloud, Code2 }
 
 const { t } = useLanguage()
 const langDocs = portfolioData.docs.languages

@@ -137,19 +137,6 @@
         "heading": "Technical Skills",
         "categories": [
           {
-            "icon": "Brain",
-            "title": "Machine Learning, DL & MLOps",
-            "accent": false,
-            "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
-            "tags": [
-              "PyTorch",
-              "TensorFlow",
-              "Sklearn",
-              "XGBoost",
-              "Amazon SageMaker"
-            ]
-          },
-          {
             "icon": "Bot",
             "title": "Generative AI & Agentic Systems",
             "accent": false,
@@ -160,6 +147,32 @@
               "Milvus",
               "Qdrant",
               "Amazon Bedrock"
+            ]
+          },
+          {
+            "icon": "Activity",
+            "title": "LLM Evaluation & Observability",
+            "accent": false,
+            "accentTags": ["DeepEval", "Promptfoo", "Amazon CloudWatch"],
+            "tags": [
+              "DeepEval",
+              "Promptfoo",
+              "MLflow",
+              "Langfuse",
+              "Amazon CloudWatch"
+            ]
+          },
+          {
+            "icon": "Brain",
+            "title": "Machine Learning, DL & MLOps",
+            "accent": false,
+            "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
+            "tags": [
+              "PyTorch",
+              "TensorFlow",
+              "Sklearn",
+              "XGBoost",
+              "Amazon SageMaker"
             ]
           },
           {
@@ -203,29 +216,14 @@
             ]
           },
           {
-            "icon": "FlaskConical",
-            "title": "Version Control, Testing & QA",
-            "accent": false,
-            "accentTags": ["Git", "GitHub", "Postman"],
-            "tags": [
-              "Git",
-              "GitHub",
-              "Pytest",
-              "Jest",
-              "Vitest",
-              "Playwright",
-              "Postman"
-            ]
-          },
-          {
             "icon": "Cloud",
-            "title": "Cloud Infrastructure & DevOps",
+            "title": "DevOps & Cloud Infrastructure",
             "accent": false,
-            "accentTags": ["AWS", "Docker", "GitHub Actions"],
+            "accentTags": ["Docker", "Amazon ECS", "Fargate", "GitHub Actions"],
             "tags": [
-              "AWS",
               "Docker",
-              "Kubernetes",
+              "Amazon ECS",
+              "Fargate",
               "Terraform",
               "GitHub Actions"
             ]
@@ -614,19 +612,6 @@
         "heading": "Compétences Techniques",
         "categories": [
           {
-            "icon": "Brain",
-            "title": "Machine Learning, DL & MLOps",
-            "accent": false,
-            "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
-            "tags": [
-              "PyTorch",
-              "TensorFlow",
-              "Sklearn",
-              "XGBoost",
-              "Amazon SageMaker"
-            ]
-          },
-          {
             "icon": "Bot",
             "title": "IA Générative & Agentiques",
             "accent": false,
@@ -637,6 +622,32 @@
               "Milvus",
               "Qdrant",
               "Amazon Bedrock"
+            ]
+          },
+          {
+            "icon": "Activity",
+            "title": "Évaluation & Observabilité LLM",
+            "accent": false,
+            "accentTags": ["DeepEval", "Promptfoo", "Amazon CloudWatch"],
+            "tags": [
+              "DeepEval",
+              "Promptfoo",
+              "MLflow",
+              "Langfuse",
+              "Amazon CloudWatch"
+            ]
+          },
+          {
+            "icon": "Brain",
+            "title": "Machine Learning, DL & MLOps",
+            "accent": false,
+            "accentTags": ["PyTorch", "TensorFlow", "Amazon SageMaker"],
+            "tags": [
+              "PyTorch",
+              "TensorFlow",
+              "Sklearn",
+              "XGBoost",
+              "Amazon SageMaker"
             ]
           },
           {
@@ -680,29 +691,14 @@
             ]
           },
           {
-            "icon": "FlaskConical",
-            "title": "Contrôle de Version, Tests & QA",
-            "accent": false,
-            "accentTags": ["Git", "GitHub", "Postman"],
-            "tags": [
-              "Git",
-              "GitHub",
-              "Pytest",
-              "Jest",
-              "Vitest",
-              "Playwright",
-              "Postman"
-            ]
-          },
-          {
             "icon": "Cloud",
-            "title": "Cloud Infrastructure & DevOps",
+            "title": "DevOps & Infrastructure Cloud",
             "accent": false,
-            "accentTags": ["AWS", "Docker", "GitHub Actions"],
+            "accentTags": ["Docker", "Amazon ECS", "Fargate", "GitHub Actions"],
             "tags": [
-              "AWS",
               "Docker",
-              "Kubernetes",
+              "Amazon ECS",
+              "Fargate",
               "Terraform",
               "GitHub Actions"
             ]
