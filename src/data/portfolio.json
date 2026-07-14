@@ -93,7 +93,7 @@
           "Multi-Agent Systems Builder"
         ],
         "cardRole": "Generative AI Engineer",
-        "desc": "Passionate about **Generative AI** and **Agentic Systems**, with a strong foundation in algorithms and problem solving, driven to build innovative AI solutions and grow through every project.",
+        "desc": "Passionate about **Generative AI** and **Agentic Systems**, with a strong foundation in machine learning and problem solving, driven to build innovative AI solutions and grow through every project.",
         "cta_projects": "View my projects",
         "cta_contact": "Get in touch",
         "card": {
@@ -106,9 +106,9 @@
       "about": {
         "heading": "About Me",
         "paragraphs": [
-          "I'm a Computer Science Engineering student at **Sup Galilée, Sorbonne Paris North University**, working as a **Generative AI Engineer Apprentice at Crédit Agricole**. I'm passionate about **Generative AI** and **Agentic Systems**, and my goal is to keep strengthening my skills while contributing to innovative AI projects.",
-          "My background spans **machine learning**, **deep learning**, and **natural language processing**, built through internships and personal projects. I enjoy the full cycle, from experimenting with models to shipping things that actually work.",
-          "Outside of work and studies, I was involved in **Enactus** and **AIESEC**, where I contributed to social entrepreneurship and international exchange, driven by the same curiosity and commitment I bring to every technical challenge."
+          "I'm a Computer Science Engineering student at **Sup Galilée, Sorbonne Paris North University**, and a **Generative AI Engineer Apprentice at Crédit Agricole**, with a strong focus on **agentic AI systems**.",
+          "My expertise is built on a solid foundation in **machine learning**, **deep learning**, and **natural language processing**, strengthened through internships and hands-on AI projects.",
+          "Beyond technology, I was involved with **Enactus** and **AIESEC** in social entrepreneurship and international exchange, which reflects the same curiosity and commitment I bring to every technical challenge."
         ],
         "stats": [
           {
@@ -570,7 +570,7 @@
           "Concepteur de Systèmes Multi-Agents"
         ],
         "cardRole": "Ingénieur IA Générative",
-        "desc": "Passionné par l'**IA Générative** et les **Systèmes Agentiques**, avec de solides bases en algorithmique et en résolution de problèmes, déterminé à construire des solutions IA innovantes et à progresser à travers chaque projet.",
+        "desc": "Passionné par l'**IA Générative** et **Agentique**, avec de solides bases en machine learning, déterminé à construire des solutions IA innovantes et à progresser à travers chaque projet.",
         "cta_projects": "Voir mes projets",
         "cta_contact": "Me contacter",
         "card": {
@@ -583,9 +583,9 @@
       "about": {
         "heading": "À propos de moi",
         "paragraphs": [
-          "Étudiant en ingénierie informatique à **Sup Galilée, Université Sorbonne Paris Nord**, je travaille en alternance comme **Apprenti Ingénieur IA Générative chez Crédit Agricole**. Passionné par l'**IA Générative** et les **Systèmes Agentiques**, mon objectif est d'approfondir mes compétences tout en contribuant à des projets IA innovants.",
-          "Mon parcours couvre le **machine learning**, le **deep learning** et le **traitement automatique du langage naturel**, forgé au fil de stages et de projets personnels. J'apprécie tout le cycle, de l'expérimentation avec les modèles jusqu'à livrer des solutions qui fonctionnent réellement.",
-          "En dehors du travail et des études, je me suis investi dans **Enactus** et **AIESEC**, où j'ai contribué à l'entrepreneuriat social et aux échanges internationaux, animé par la même curiosité et le même engagement que j'apporte à chaque défi technique."
+          "Je suis étudiant en ingénierie informatique à **Sup Galilée, Université Sorbonne Paris Nord**, et **Apprenti Ingénieur IA Générative chez Crédit Agricole**, avec un fort intérêt pour les **systèmes d'IA agentiques**.",
+          "Mon expertise repose sur une solide formation en **machine learning**, **deep learning** et **traitement automatique du langage naturel**, renforcée par des stages et des projets pratiques en IA.",
+          "Au-delà de la technologie, je me suis investi dans **Enactus** et **AIESEC**, dans l'entrepreneuriat social et les échanges internationaux, ce qui reflète la même curiosité et le même engagement que j'apporte à chaque défi technique."
         ],
         "stats": [
           {
@@ -853,7 +853,7 @@
             "duration": "3 mois",
             "badge": "Deep RL",
             "title": "Slythera",
-            "desc": "Développement d'un **jeu de grille 2D** en **Pygame** où un agent **Deep Q-Learning** navigue parmi les obstacles et maximise son score dans un environnement dynamique et progressivement exigeant.",
+            "desc": "Développement d'un **jeu de grille 2D** en **Pygame** intégrant un agent **IA** entraîné via **Deep Q-Learning**, assurant une navigation autonome parmi les obstacles et maximisant le score dans un environnement dynamique et exigeant.",
             "tags": [
               "Reinforcement Learning",
               "TensorFlow/Keras",
@@ -895,7 +895,7 @@
             "period": "En idéation ~ 2026",
             "badge": "Agentique · PM",
             "title": "PlanYU",
-            "desc": "Conception d'une **plateforme de gestion de projet générative** produisant des structures complètes, tâches, plannings et affectations, en associant les membres de l'équipe selon leurs compétences et disponibilités.",
+            "desc": "Conception d'une **plateforme de gestion de projet générative** qui produit des structures de projet complètes, tâches, plannings et affectations, associant chaque membre de l'équipe aux tâches selon ses compétences et sa disponibilité.",
             "tags": [
               "Delegation",
               "LLM Planning",
