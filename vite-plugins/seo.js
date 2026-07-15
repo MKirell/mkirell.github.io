@@ -90,7 +90,7 @@ function parseProjectDate(period = "") {
 function buildJsonLd(portfolio) {
   const { person, docs } = portfolio;
   const t = portfolio.locales.en;
-  const base = person.url;
+  const base = person.url.replace(/\/$/, "");
   const id = (frag) => `${base}/${frag}`;
 
   const orgs = new Map();
@@ -366,7 +366,7 @@ function renderHeadTags(portfolio, jsonld) {
     person.worksFor,
     ...new Set(t.skills.categories.flatMap((c) => c.accentTags)),
   ].join(", ");
-  const ogImage = `${person.url}/og-image.png`;
+  const ogImage = `${person.url.replace(/\/$/, "")}/og-image.png`;
   const attr = escapeAttr;
 
   return `
