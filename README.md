@@ -164,4 +164,4 @@ SELECT ?award WHERE {
 
 ## Author
 
-**Mohamed Khalil Zrelly** — [LinkedIn](https://www.linkedin.com/in/mohamed-khalil-zrelly/) · [mkirell.github.io/Portfolio](https://mkirell.github.io/Portfolio/)
+**Mohamed Khalil Zrelly** — [LinkedIn](https://www.linkedin.com/in/mohamed-khalil-zrelly/) · [mkirell.github.io/Portfolio/](https://mkirell.github.io/Portfolio/)
