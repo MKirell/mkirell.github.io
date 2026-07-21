@@ -7,7 +7,7 @@
       </header>
       <h2 id="experience-heading" class="section-h2" v-reveal>{{ t.experience.heading }}</h2>
       <ol class="timeline">
-        <li v-for="(job, i) in t.experience.jobs" :key="job.company + job.period" class="timeline__item" v-reveal>
+        <li v-for="(job, i) in visibleJobs" :key="job.company + job.period" class="timeline__item" v-reveal>
           <div class="timeline__dot" aria-hidden="true"></div>
           <article class="timeline__card">
             <header class="timeline__meta">
@@ -41,21 +41,39 @@
             </ul>
           </article>
         </li>
+        <li v-if="hasMore" class="timeline__item timeline__item--expand" v-reveal>
+          <button type="button" class="timeline__dot timeline__dot--expand icon-hint"
+            :aria-label="expanded ? t.experience.show_less : t.experience.show_more" @click="expanded = !expanded">
+            <component :is="expanded ? Minus : Plus" :size="16" />
+          </button>
+          <button type="button" class="timeline__expand" @click="expanded = !expanded">
+            {{ expanded ? t.experience.show_less : t.experience.show_more }}
+          </button>
+        </li>
       </ol>
     </div>
   </section>
 </template>
 
 <script setup>
+import { ref, computed } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
 import { docUrl } from '@/utils/docs.js'
-import { Paperclip } from '@lucide/vue'
+import { Paperclip, Plus, Minus } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
+
+const VISIBLE_COUNT = 2
 
 const { t } = useLanguage()
 const expDocs = portfolioData.docs.experience
 const expLinks = portfolioData.docs.experienceLinks
+
+const expanded = ref(false)
+const hasMore = computed(() => t.value.experience.jobs.length > VISIBLE_COUNT)
+const visibleJobs = computed(() =>
+  expanded.value ? t.value.experience.jobs : t.value.experience.jobs.slice(0, VISIBLE_COUNT)
+)
 </script>
 
 <style scoped>
@@ -93,6 +111,45 @@ const expLinks = portfolioData.docs.experienceLinks
   border: 2px solid var(--accent);
   box-shadow: 0 0 0 6px var(--bg);
   z-index: 1;
+}
+
+.timeline__dot--expand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--accent);
+  cursor: pointer;
+  transition: transform var(--transition), background var(--transition);
+}
+
+.timeline__dot--expand:hover {
+  background: var(--accent-soft);
+  transform: scale(1.08);
+}
+
+.timeline__item--expand {
+  align-items: center;
+}
+
+.timeline__expand {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-lg);
+  padding: 16px 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--accent-deep);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.timeline__expand:hover {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
 }
 
 .timeline__card {

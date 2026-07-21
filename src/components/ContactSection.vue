@@ -2,7 +2,7 @@
   <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
     <div class="container">
       <header class="section__header section__header--center" v-reveal>
-        <span class="section-num">06</span>
+        <span class="section-num">07</span>
         <span class="section-name">{{ t.nav.contact }}</span>
       </header>
       <h2 id="contact-heading" v-reveal>{{ t.contact.heading }}</h2>
@@ -70,7 +70,6 @@ const { t } = useLanguage()
 
 <style scoped>
 .section--contact {
-  background: var(--bg-tint);
   text-align: center;
 }
 

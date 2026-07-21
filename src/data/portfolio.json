@@ -92,6 +92,7 @@
         "projects": "Projects",
         "skills": "Skills",
         "education": "Education",
+        "achievements": "Achievements",
         "contact": "Contact"
       },
       "hero": {
@@ -150,7 +151,7 @@
             "icon": "Bot",
             "title": "Generative AI & Agentic Systems",
             "accent": false,
-            "accentTags": ["LangGraph", "Qdrant", "Amazon Bedrock"],
+            "accentTags": ["LangGraph", "Amazon Bedrock"],
             "tags": [
               "LangChain",
               "LangGraph",
@@ -163,13 +164,27 @@
             "icon": "Activity",
             "title": "LLM Evaluation & Observability",
             "accent": false,
-            "accentTags": ["DeepEval", "Promptfoo", "Amazon CloudWatch"],
+            "accentTags": ["DeepEval", "Langfuse"],
             "tags": [
               "DeepEval",
-              "Promptfoo",
-              "MLflow",
               "Langfuse",
-              "Amazon CloudWatch"
+              "Grafana",
+              "OpenTelemetry",
+              "Prometheus"
+            ]
+          },
+          {
+            "icon": "Languages",
+            "title": "NLP, OCR & LLM Fine-Tuning",
+            "accent": false,
+            "accentTags": ["Transformers", "PEFT", "TRL"],
+            "tags": [
+              "Transformers",
+              "Datasets",
+              "PEFT",
+              "TRL",
+              "PaddleOCR",
+              "Spacy"
             ]
           },
           {
@@ -186,56 +201,43 @@
             ]
           },
           {
-            "icon": "BarChart3",
-            "title": "Data Analysis & Engineering",
+            "icon": "Globe",
+            "title": "Full-Stack Web Development",
             "accent": false,
-            "accentTags": ["Pandas", "Matplotlib", "PySpark", "Amazon S3"],
+            "accentTags": ["React", "FastAPI", "Streamlit"],
             "tags": [
-              "Pandas",
-              "Matplotlib",
-              "PySpark",
-              "Apache Airflow",
-              "Amazon S3"
+              "React",
+              "FastAPI",
+              "Express.js",
+              "Vue.js",
+              "Flask",
+              "Streamlit"
             ]
           },
           {
             "icon": "Database",
-            "title": "SQL & NoSQL Databases",
+            "title": "Data Engineering & Databases",
             "accent": false,
-            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
+            "accentTags": ["MongoDB", "Amazon DynamoDB"],
             "tags": [
-              "Oracle",
-              "MySQL",
+              "PySpark",
+              "Airflow",
               "PostgreSQL",
               "MongoDB",
               "Amazon DynamoDB"
             ]
           },
           {
-            "icon": "Globe",
-            "title": "Full-Stack Web Development",
-            "accent": false,
-            "accentTags": ["React", "Vue.js", "FastAPI", "Flask"],
-            "tags": [
-              "FastAPI",
-              "Flask",
-              "Express.js",
-              "Laravel",
-              "React",
-              "Vue.js"
-            ]
-          },
-          {
             "icon": "Cloud",
-            "title": "DevOps & Cloud Infrastructure",
+            "title": "Cloud Deployment & CI/CD",
             "accent": false,
-            "accentTags": ["Docker", "Amazon ECS", "Fargate", "GitHub Actions"],
+            "accentTags": ["Docker", "Terraform", "Amazon ECR/ECS"],
             "tags": [
+              "Git",
               "Docker",
-              "Amazon ECS",
-              "Fargate",
+              "GitHub Actions",
               "Terraform",
-              "GitHub Actions"
+              "Amazon ECR/ECS"
             ]
           },
           {
@@ -246,9 +248,9 @@
             "tags": [
               "Python",
               "JavaScript/TS",
-              "PHP",
               "Java",
               "C/C++",
+              "PHP",
               "PL/SQL"
             ]
           }
@@ -257,6 +259,8 @@
       "experience": {
         "heading": "Work Experience",
         "current_label": "Ongoing",
+        "show_more": "Show earlier experience",
+        "show_less": "Show less",
         "jobs": [
           {
             "current": true,
@@ -272,7 +276,6 @@
               "Advanced RAG",
               "Amazon Bedrock",
               "LLM Observability",
-              "System Architecture",
               "Python/FastAPI",
               "Amazon DynamoDB",
               "Python/Streamlit"
@@ -292,7 +295,7 @@
               "Sentence-Transformers",
               "Fine-Tuning",
               "PyTorch",
-              "Tesseract OCR",
+              "PaddleOCR",
               "Python/Flask",
               "MongoDB",
               "React/Redux",
@@ -337,7 +340,10 @@
               "LangChain",
               "Qwen3-VL",
               "Milvus",
-              "Python/Streamlit"
+              "Python/Streamlit",
+              "Sentence-Transformers",
+              "PDF Parsing",
+              "Prompt Engineering"
             ]
           },
           {
@@ -345,14 +351,17 @@
             "duration": "5 months",
             "badge": "NLP · OCR",
             "title": "VERMail",
-            "desc": "Developed an end-to-end **email intelligence platform** combining fine-tuned **BERT** for multi-class classification and **Tesseract OCR** for attachment parsing, with a **React** dashboard for real-time monitoring.",
+            "desc": "Developed an end-to-end **email intelligence platform** combining fine-tuned **BERT** for multi-class classification and **PaddleOCR** for accurate attachment parsing, with a **React** dashboard for real-time monitoring.",
             "tags": [
               "BERT Fine-Tuning",
               "PyTorch",
-              "Tesseract OCR",
+              "PaddleOCR",
               "Python/Flask",
               "React/Redux",
-              "MongoDB"
+              "MongoDB",
+              "REST API",
+              "Chart.js",
+              "JWT Authentication"
             ]
           },
           {
@@ -367,7 +376,10 @@
               "Gymnasium",
               "NumPy",
               "Pandas",
-              "Python/Pygame"
+              "Python/Pygame",
+              "Matplotlib",
+              "Experience Replay",
+              "Epsilon-Greedy"
             ]
           },
           {
@@ -382,7 +394,11 @@
               "GPT-OSS",
               "Qdrant",
               "Python/FastAPI",
-              "Vue.js"
+              "Vue.js",
+              "X API",
+              "Trend Detection",
+              "Docker",
+              "Social Listening"
             ]
           },
           {
@@ -391,11 +407,14 @@
             "title": "AeroVI",
             "desc": "Designing a **multimodal travel guide** that generates personalised travel itineraries, curated destination recommendations, and immersive visual content, covering the full journey from planning to discovery.",
             "tags": [
-              "Curation",
               "Advanced RAG",
               "Multimodal LLM",
+              "Text-to-Image Generation",
               "Visual Generation",
-              "Knowledge Graph"
+              "Curation",
+              "Knowledge Graph",
+              "Vector Search",
+              "Geolocation API"
             ]
           },
           {
@@ -404,11 +423,13 @@
             "title": "PlanYU",
             "desc": "Designing a **generative project management platform** that produces complete project structures, tasks, schedules, and assignments, pairing team members to each task based on their skills and availability.",
             "tags": [
-              "Delegation",
-              "LLM Planning",
-              "Skill Matching",
               "Agentic Workflows",
-              "Task Decomposition"
+              "LLM Planning",
+              "Task Decomposition",
+              "Skill Matching",
+              "Delegation",
+              "Resource Allocation",
+              "Scheduling"
             ]
           }
         ]
@@ -467,7 +488,10 @@
             "issuer": "Microsoft Azure",
             "date": "Jan 2024"
           }
-        ],
+        ]
+      },
+      "achievements": {
+        "heading": "Achievements & Languages",
         "vol_title": "Volunteering",
         "vols": [
           {
@@ -567,6 +591,7 @@
         "projects": "Projets",
         "skills": "Compétences",
         "education": "Formation",
+        "achievements": "Réalisations",
         "contact": "Contact"
       },
       "hero": {
@@ -638,13 +663,27 @@
             "icon": "Activity",
             "title": "Évaluation & Observabilité LLM",
             "accent": false,
-            "accentTags": ["DeepEval", "Promptfoo", "Amazon CloudWatch"],
+            "accentTags": ["DeepEval", "Langfuse"],
             "tags": [
               "DeepEval",
-              "Promptfoo",
-              "MLflow",
               "Langfuse",
-              "Amazon CloudWatch"
+              "Grafana",
+              "OpenTelemetry",
+              "Prometheus"
+            ]
+          },
+          {
+            "icon": "Languages",
+            "title": "NLP, OCR & Fine-Tuning LLM",
+            "accent": false,
+            "accentTags": ["Transformers", "PEFT", "TRL"],
+            "tags": [
+              "Transformers",
+              "Datasets",
+              "PEFT",
+              "TRL",
+              "PaddleOCR",
+              "Spacy"
             ]
           },
           {
@@ -661,56 +700,43 @@
             ]
           },
           {
-            "icon": "BarChart3",
-            "title": "Analyse & Ingénierie Data",
+            "icon": "Globe",
+            "title": "Développement Web Full-Stack",
             "accent": false,
-            "accentTags": ["Pandas", "Matplotlib", "PySpark", "Amazon S3"],
+            "accentTags": ["React", "FastAPI", "Streamlit"],
             "tags": [
-              "Pandas",
-              "Matplotlib",
-              "PySpark",
-              "Apache Airflow",
-              "Amazon S3"
+              "React",
+              "FastAPI",
+              "Express.js",
+              "Vue.js",
+              "Flask",
+              "Streamlit"
             ]
           },
           {
             "icon": "Database",
-            "title": "Bases de données SQL et NoSQL",
+            "title": "Ingénierie & Bases de Données",
             "accent": false,
-            "accentTags": ["PostgreSQL", "MongoDB", "Amazon DynamoDB"],
+            "accentTags": ["MongoDB", "Amazon DynamoDB"],
             "tags": [
-              "Oracle",
-              "MySQL",
+              "PySpark",
+              "Airflow",
               "PostgreSQL",
               "MongoDB",
               "Amazon DynamoDB"
             ]
           },
           {
-            "icon": "Globe",
-            "title": "Développement Web Full-Stack",
-            "accent": false,
-            "accentTags": ["React", "Vue.js", "FastAPI", "Flask"],
-            "tags": [
-              "FastAPI",
-              "Flask",
-              "Express.js",
-              "Laravel",
-              "React",
-              "Vue.js"
-            ]
-          },
-          {
             "icon": "Cloud",
-            "title": "DevOps & Infrastructure Cloud",
+            "title": "Déploiement Cloud & CI/CD",
             "accent": false,
-            "accentTags": ["Docker", "Amazon ECS", "Fargate", "GitHub Actions"],
+            "accentTags": ["Docker", "Terraform", "Amazon ECR/ECS"],
             "tags": [
+              "Git",
               "Docker",
-              "Amazon ECS",
-              "Fargate",
+              "GitHub Actions",
               "Terraform",
-              "GitHub Actions"
+              "Amazon ECR/ECS"
             ]
           },
           {
@@ -721,9 +747,9 @@
             "tags": [
               "Python",
               "JavaScript/TS",
-              "PHP",
               "Java",
               "C/C++",
+              "PHP",
               "PL/SQL"
             ]
           }
@@ -732,6 +758,8 @@
       "experience": {
         "heading": "Expériences Professionnelles",
         "current_label": "En poste",
+        "show_more": "Voir l'expérience précédente",
+        "show_less": "Voir moins",
         "jobs": [
           {
             "current": true,
@@ -747,7 +775,6 @@
               "Advanced RAG",
               "Amazon Bedrock",
               "LLM Observability",
-              "System Architecture",
               "Python/FastAPI",
               "Amazon DynamoDB",
               "Python/Streamlit"
@@ -767,7 +794,7 @@
               "Sentence-Transformers",
               "Fine-Tuning",
               "PyTorch",
-              "Tesseract OCR",
+              "PaddleOCR",
               "Python/Flask",
               "MongoDB",
               "React/Redux",
@@ -812,7 +839,10 @@
               "LangChain",
               "Qwen3-VL",
               "Milvus",
-              "Python/Streamlit"
+              "Python/Streamlit",
+              "Sentence-Transformers",
+              "PDF Parsing",
+              "Prompt Engineering"
             ]
           },
           {
@@ -820,14 +850,17 @@
             "duration": "5 mois",
             "badge": "NLP · OCR",
             "title": "VERMail",
-            "desc": "Développement d'une **plateforme e-mail intelligente** combinant **BERT** fine-tuné pour la classification multi-classes et **Tesseract OCR** pour l'analyse des pièces jointes, avec un dashboard **React** pour la surveillance en temps réel.",
+            "desc": "Développement d'une **plateforme e-mail intelligente** combinant **BERT** fine-tuné pour la classification multi-classes et **PaddleOCR** pour l'analyse des pièces jointes, avec un dashboard **React** pour la surveillance en temps réel.",
             "tags": [
               "BERT Fine-Tuning",
               "PyTorch",
-              "Tesseract OCR",
+              "PaddleOCR",
               "Python/Flask",
               "React/Redux",
-              "MongoDB"
+              "MongoDB",
+              "REST API",
+              "Chart.js",
+              "JWT Authentication"
             ]
           },
           {
@@ -842,7 +875,10 @@
               "Gymnasium",
               "NumPy",
               "Pandas",
-              "Python/Pygame"
+              "Python/Pygame",
+              "Matplotlib",
+              "Experience Replay",
+              "Epsilon-Greedy"
             ]
           },
           {
@@ -857,7 +893,11 @@
               "GPT-OSS",
               "Qdrant",
               "Python/FastAPI",
-              "Vue.js"
+              "Vue.js",
+              "X API",
+              "Trend Detection",
+              "Docker",
+              "Social Listening"
             ]
           },
           {
@@ -866,11 +906,14 @@
             "title": "AeroVI",
             "desc": "Conception d'un **guide de voyage multimodal** générant des itinéraires personnalisés, des recommandations de destinations sélectionnées et un contenu visuel immersif, couvrant l'intégralité du voyage, de la planification à la découverte.",
             "tags": [
-              "Curation",
               "Advanced RAG",
               "Multimodal LLM",
+              "Text-to-Image Generation",
               "Visual Generation",
-              "Knowledge Graph"
+              "Curation",
+              "Knowledge Graph",
+              "Vector Search",
+              "Geolocation API"
             ]
           },
           {
@@ -879,11 +922,13 @@
             "title": "PlanYU",
             "desc": "Conception d'une **plateforme de gestion de projet générative** qui produit des structures de projet complètes, tâches, plannings et affectations, associant chaque membre de l'équipe aux tâches selon ses compétences et sa disponibilité.",
             "tags": [
-              "Delegation",
-              "LLM Planning",
-              "Skill Matching",
               "Agentic Workflows",
-              "Task Decomposition"
+              "LLM Planning",
+              "Task Decomposition",
+              "Skill Matching",
+              "Delegation",
+              "Resource Allocation",
+              "Scheduling"
             ]
           }
         ]
@@ -942,7 +987,10 @@
             "issuer": "Microsoft Azure",
             "date": "Jan 2024"
           }
-        ],
+        ]
+      },
+      "achievements": {
+        "heading": "Réalisations & Langues",
         "vol_title": "Bénévolat",
         "vols": [
           {

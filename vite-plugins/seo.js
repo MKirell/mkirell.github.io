@@ -154,7 +154,7 @@ function buildJsonLd(portfolio) {
     dateCreated: parseCertDate(c.date),
   }));
 
-  const memberOf = t.education.vols.map((v, i) => ({
+  const memberOf = t.achievements.vols.map((v, i) => ({
     "@type": "OrganizationRole",
     roleName: v.role,
     description: stripMarkdown(v.desc),
@@ -194,7 +194,7 @@ function buildJsonLd(portfolio) {
     },
     description: person.description,
     knowsAbout: [...new Set(t.skills.categories.flatMap((c) => c.tags))],
-    knowsLanguage: t.education.languages.map((l) => ({
+    knowsLanguage: t.achievements.languages.map((l) => ({
       "@type": "Language",
       name: l.name,
       alternateName: LANG_CODES[l.name],
@@ -203,7 +203,7 @@ function buildJsonLd(portfolio) {
     worksFor,
     alumniOf,
     hasCredential: [...degreeCredentials, ...certCredentials],
-    award: t.education.awards.map((a) => a.title),
+    award: t.achievements.awards.map((a) => a.title),
     memberOf,
   };
 
@@ -272,7 +272,7 @@ function renderSeoShell(data) {
     )
     .join("");
 
-  const languages = t.education.languages
+  const languages = t.achievements.languages
     .map((l) => `<li>${escapeHtml(l.name)} — ${escapeHtml(l.level)}</li>`)
     .join("");
 
@@ -292,7 +292,18 @@ function renderSeoShell(data) {
     )
     .join("");
 
-  const awards = t.education.awards
+  const vols = t.achievements.vols
+    .map(
+      (v) => `
+      <li>
+        <h3>${escapeHtml(v.role)} — ${escapeHtml(v.org)}</h3>
+        <p>${escapeHtml(v.period)}</p>
+        <p>${boldify(v.desc)}</p>
+      </li>`,
+    )
+    .join("");
+
+  const awards = t.achievements.awards
     .map(
       (a) =>
         `<li>${escapeHtml(a.title)}${a.place ? " — " + escapeHtml(a.place) : ""}</li>`,
@@ -308,6 +319,7 @@ function renderSeoShell(data) {
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -339,9 +351,14 @@ function renderSeoShell(data) {
     <ul>${degrees}</ul>
     <h3>${escapeHtml(t.education.certs_title)}</h3>
     <ul>${certs}</ul>
-    <h3>${escapeHtml(t.education.awards_title)}</h3>
+  </section>
+  <section id="achievements">
+    <h2>${escapeHtml(t.achievements.heading)}</h2>
+    <h3>${escapeHtml(t.achievements.vol_title)}</h3>
+    <ul>${vols}</ul>
+    <h3>${escapeHtml(t.achievements.awards_title)}</h3>
     <ul>${awards}</ul>
-    <h3>${escapeHtml(t.education.lang_title)}</h3>
+    <h3>${escapeHtml(t.achievements.lang_title)}</h3>
     <ul>${languages}</ul>
   </section>
   <section id="contact">

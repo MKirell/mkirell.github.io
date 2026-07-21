@@ -9,6 +9,7 @@
       <ProjectsSection />
       <SkillsSection />
       <EducationSection />
+      <AchievementsSection />
       <ContactSection />
     </main>
     <AppFooter />
@@ -23,6 +24,7 @@ import SkillsSection from '@/components/SkillsSection.vue'
 import ExperienceSection from '@/components/ExperienceSection.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
+import AchievementsSection from '@/components/AchievementsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import AppFooter from '@/components/AppFooter.vue'
 </script>

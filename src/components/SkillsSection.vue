@@ -26,9 +26,9 @@
 
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
-import { Brain, Bot, Activity, BarChart3, Database, Globe, Cloud, Code2 } from '@lucide/vue'
+import { Brain, Bot, Activity, Database, Globe, Cloud, Code2, Languages } from '@lucide/vue'
 
-const icons = { Brain, Bot, Activity, BarChart3, Database, Globe, Cloud, Code2 }
+const icons = { Brain, Bot, Activity, Database, Globe, Cloud, Code2, Languages }
 
 const { t } = useLanguage()
 </script>

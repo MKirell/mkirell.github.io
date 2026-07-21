@@ -40,7 +40,7 @@
           </div>
           <div class="terminal__line">
             <span class="cmd">{{ t.hero.card.languages }}</span>
-            <span class="out">{{t.education.languages.map(l => l.name).join(' · ')}}</span>
+            <span class="out">{{t.achievements.languages.map(l => l.name).join(' · ')}}</span>
           </div>
           <div class="terminal__line blink__line">
             <span class="cmd" style="color:var(--sage)">$</span>
@@ -71,8 +71,8 @@
             </svg>
           </a>
         </footer>
-      </div><!-- /.terminal -->
-    </div><!-- /.hero__visual -->
+      </div>
+    </div>
 
     <div class="hero__scroll">
       <div class="scroll-indicator">
