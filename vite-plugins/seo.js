@@ -28,6 +28,10 @@ function readJson(path) {
   return JSON.parse(raw.startsWith(BOM) ? raw.slice(1) : raw);
 }
 
+function stripTrailingSlash(url) {
+  return url.replace(/\/$/, "");
+}
+
 function escapeHtml(str = "") {
   return String(str)
     .replace(/&/g, "&amp;")
@@ -90,7 +94,7 @@ function parseProjectDate(period = "") {
 function buildJsonLd(portfolio) {
   const { person, docs } = portfolio;
   const t = portfolio.locales.en;
-  const base = person.url.replace(/\/$/, "");
+  const base = stripTrailingSlash(person.url);
   const id = (frag) => `${base}/${frag}`;
 
   const orgs = new Map();
@@ -366,7 +370,7 @@ function renderHeadTags(portfolio, jsonld) {
     person.worksFor,
     ...new Set(t.skills.categories.flatMap((c) => c.accentTags)),
   ].join(", ");
-  const ogImage = `${person.url.replace(/\/$/, "")}/imgs/og-image.png`;
+  const ogImage = `${stripTrailingSlash(person.url)}/imgs/og-image.png`;
   const attr = escapeAttr;
 
   return `
