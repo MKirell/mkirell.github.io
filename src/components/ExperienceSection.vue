@@ -23,8 +23,9 @@
               </span>
               <div class="timeline__meta-right">
                 <time class="timeline__period">{{ job.period }}</time>
-                <a v-if="expDocs[i]" :href="docUrl(expDocs[i])" target="_blank" rel="noopener noreferrer"
-                  class="doc-link icon-hint" title="View attestation">
+                <a v-if="expDocs[i]" :href="docUrl(expDocs[i])"
+                  @click.prevent="openPdf(docUrl(expDocs[i]), job.company)" class="doc-link icon-hint"
+                  title="View attestation">
                   <Paperclip :size="15" />
                 </a>
               </div>
@@ -60,12 +61,14 @@ import { ref, computed } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
 import { docUrl } from '@/utils/docs.js'
+import { usePdfViewer } from '@/composables/usePdfViewer.js'
 import { Paperclip, Plus, Minus } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
 
 const VISIBLE_COUNT = 2
 
 const { t } = useLanguage()
+const { openPdf } = usePdfViewer()
 const expDocs = portfolioData.docs.experience
 const expLinks = portfolioData.docs.experienceLinks
 

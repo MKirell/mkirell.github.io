@@ -7,7 +7,6 @@
       </header>
       <h2 id="education-heading" class="section-h2" v-reveal>{{ t.education.heading }}</h2>
 
-      <!-- Degrees + Certs -->
       <div class="edu__grid" v-reveal>
         <div>
           <p class="edu__sub">{{ t.education.degrees_title }}</p>
@@ -17,8 +16,9 @@
               <div class="edu-card__body">
                 <div class="edu-card__title-row">
                   <h3>{{ deg.title }}</h3>
-                  <a v-if="degDocs[i]" :href="docUrl(degDocs[i])" target="_blank" rel="noopener noreferrer"
-                    class="doc-link icon-hint" title="View diploma">
+                  <a v-if="degDocs[i]" :href="docUrl(degDocs[i])"
+                    @click.prevent="openPdf(docUrl(degDocs[i]), deg.title)" class="doc-link icon-hint"
+                    title="View diploma">
                     <Paperclip :size="15" />
                   </a>
                 </div>
@@ -65,11 +65,15 @@
                 </div>
                 <div class="cert-item__body">
                   <p class="cert-item__title">{{ cert.title }}</p>
-                  <p class="cert-item__issuer">{{ cert.issuer }}</p>
+                  <div class="cert-item__meta">
+                    <p class="cert-item__issuer">{{ cert.issuer }}</p>
+                    <time v-if="cert.date" class="cert-item__date cert-item__date--meta">{{ cert.date }}</time>
+                  </div>
                 </div>
-                <time v-if="cert.date" class="cert-item__date">{{ cert.date }}</time>
+                <time v-if="cert.date" class="cert-item__date cert-item__date--inline">{{ cert.date }}</time>
                 <a v-if="certDocs[certPage * CERTS_PER_PAGE + i]"
-                  :href="docUrl(certDocs[certPage * CERTS_PER_PAGE + i])" target="_blank" rel="noopener noreferrer"
+                  :href="docUrl(certDocs[certPage * CERTS_PER_PAGE + i])"
+                  @click.prevent="openPdf(docUrl(certDocs[certPage * CERTS_PER_PAGE + i]), cert.title)"
                   class="doc-link icon-hint" title="View certificate">
                   <Paperclip :size="15" />
                 </a>
@@ -86,8 +90,9 @@
             <span :class="['fi', `fi-${langItem.flagCode}`]" class="lang-flag-icon" aria-hidden="true"></span>
             <span class="lang-name">{{ langItem.name }}</span>
             <span class="lang-level">{{ langItem.level }}</span>
-            <a v-if="langDocs[i]" :href="docUrl(langDocs[i])" target="_blank" rel="noopener noreferrer"
-              class="doc-link icon-hint" title="View certificate">
+            <a v-if="langDocs[i]" :href="docUrl(langDocs[i])"
+              @click.prevent="openPdf(docUrl(langDocs[i]), langItem.name)" class="doc-link icon-hint"
+              title="View certificate">
               <Paperclip :size="15" />
             </a>
           </div>
@@ -105,12 +110,14 @@
 import { computed, ref, watch } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { docUrl } from '@/utils/docs.js'
+import { usePdfViewer } from '@/composables/usePdfViewer.js'
 import { Paperclip, Zap, MessageSquare, Cloud, BarChart3, Layers, SlidersHorizontal, ChevronLeft, ChevronRight } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
 
 const icons = { Zap, MessageSquare, Cloud, BarChart3, Layers, SlidersHorizontal }
 
 const { t, lang } = useLanguage()
+const { openPdf } = usePdfViewer()
 const { degrees: degDocs, certs: certDocs, languages: langDocs } = portfolioData.docs
 
 const CERTS_PER_PAGE = 4
@@ -387,6 +394,13 @@ watch(lang, () => {
   margin-bottom: 3px;
 }
 
+.cert-item__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
 .cert-item__issuer {
   color: var(--ink-soft);
   font-size: 0.72rem;
@@ -400,6 +414,10 @@ watch(lang, () => {
   color: var(--ink-soft);
   opacity: 0.7;
   white-space: nowrap;
+}
+
+.cert-item__date--meta {
+  display: none;
 }
 
 .languages__title {
@@ -473,6 +491,14 @@ watch(lang, () => {
   .languages__list {
     grid-template-columns: 1fr;
   }
+
+  .cert-item__date--meta {
+    display: inline;
+  }
+
+  .cert-item__date--inline {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -484,6 +510,21 @@ watch(lang, () => {
   .edu-card__year {
     width: auto;
     padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .cert-item {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .cert-item__body {
+    min-width: 0;
+  }
+
+  .cert-item>.doc-link {
+    margin-inline-start: auto;
   }
 }
 </style>

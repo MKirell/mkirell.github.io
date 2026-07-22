@@ -7,30 +7,29 @@
       </header>
       <h2 id="achievements-heading" class="section-h2" v-reveal>{{ t.achievements.heading }}</h2>
 
-      <!-- Volunteering + Awards -->
       <div class="extras__grid" v-reveal>
         <div class="extra-block">
           <h3>{{ t.achievements.vol_title }}</h3>
           <ul>
             <li class="extra-card" v-for="(vol, i) in t.achievements.vols" :key="vol.org">
-              <div class="extra-card__header">
-                <span class="extra-card__org-row">
-                  <p class="extra-card__org">{{ vol.org }}</p>
-                  <a v-if="volLinks && volLinks[i]" :href="volLinks[i]" target="_blank" rel="noopener noreferrer"
-                    class="vol-link icon-hint" title="View on LinkedIn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" width="15" height="15" aria-hidden="true">
-                      <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </span>
-                <a v-if="volDocs[i]" :href="docUrl(volDocs[i])" target="_blank" rel="noopener noreferrer"
+              <span class="extra-card__org-row">
+                <p class="extra-card__org">{{ vol.org }}</p>
+                <a v-if="volLinks && volLinks[i]" :href="volLinks[i]" target="_blank" rel="noopener noreferrer"
+                  class="vol-link icon-hint" title="View on LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" width="15" height="15" aria-hidden="true">
+                    <path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </span>
+              <p class="extra-card__role">{{ vol.role }}</p>
+              <div class="extra-card__period-row">
+                <time class="extra-card__period">{{ vol.period }}</time>
+                <a v-if="volDocs[i]" :href="docUrl(volDocs[i])" @click.prevent="openPdf(docUrl(volDocs[i]), vol.org)"
                   class="doc-link icon-hint" title="View attestation">
                   <Paperclip :size="15" />
                 </a>
               </div>
-              <p class="extra-card__role">{{ vol.role }}</p>
-              <time class="extra-card__period">{{ vol.period }}</time>
               <p class="extra-card__desc" v-html="boldify(vol.desc)"></p>
             </li>
           </ul>
@@ -61,8 +60,9 @@
                     aria-hidden="true"></span>
                 </span>
               </div>
-              <a v-if="awardDocs[i]" :href="docUrl(awardDocs[i])" target="_blank" rel="noopener noreferrer"
-                class="doc-link icon-hint" title="View document">
+              <a v-if="awardDocs[i]" :href="docUrl(awardDocs[i])"
+                @click.prevent="openPdf(docUrl(awardDocs[i]), award.title)" class="doc-link icon-hint"
+                title="View document">
                 <Paperclip :size="15" />
               </a>
             </li>
@@ -98,12 +98,14 @@ import { ref, onUnmounted } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
 import { docUrl, imgUrl } from '@/utils/docs.js'
+import { usePdfViewer } from '@/composables/usePdfViewer.js'
 import { Paperclip, X, ChevronLeft, ChevronRight, Trophy, Medal, Award } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
 
 const icons = { Trophy, Medal, Award }
 
 const { t } = useLanguage()
+const { openPdf } = usePdfViewer()
 const { vols: volDocs, awards: awardDocs, volLinks } = portfolioData.docs
 
 const lightbox = ref({ open: false, images: [], index: 0, title: '' })
@@ -244,16 +246,11 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
   font-size: 0.78rem;
 }
 
-.extra-card__header {
+.extra-card__period-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
-  margin-bottom: 4px;
-}
-
-.extra-card__header .extra-card__org {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .extras__grid {
@@ -319,12 +316,10 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 }
 
 .extra-card__period {
-  display: block;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   color: var(--ink-soft);
   opacity: 0.75;
-  margin-bottom: 10px;
 }
 
 .extra-card__desc {
@@ -404,6 +399,25 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 @media (max-width: 900px) {
   .extras__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .award-card {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .award-card__body {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .award-card>.doc-link {
+    margin-inline-start: auto;
   }
 }
 </style>

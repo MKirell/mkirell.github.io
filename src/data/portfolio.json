@@ -1,8 +1,8 @@
 ﻿{
   "person": {
-    "name": "Mohamed Khalil Zrelly",
+    "name": "Mohamed Khalil ZRELLY",
     "givenName": "Mohamed Khalil",
-    "familyName": "Zrelly",
+    "familyName": "ZRELLY",
     "email": "mohamed.khalil.zrelly@gmail.com",
     "phone": "+33758215856",
     "phoneDisplay": "+33 7 58 21 58 56",
@@ -12,7 +12,7 @@
     "jobTitle": "Generative AI Engineer Apprentice",
     "worksFor": "Crédit Agricole",
     "description": "Generative AI Engineer Apprentice at Crédit Agricole, specializing in agentic workflow orchestration. Computer Science Engineering student at Sup Galilée, Sorbonne Paris North University, with hands-on expertise in RAG, NLP, and reinforcement learning.",
-    "addressLocality": "Le Bourget",
+    "addressLocality": "Paris",
     "addressRegion": "Île-de-France",
     "addressCountry": "FR",
     "resumeEn": "resume_en_mkzrelly.pdf",
@@ -47,7 +47,7 @@
       "certificate-azure-ai900.pdf",
       "certificate-azure-dp900.pdf"
     ],
-    "vols": [null, null],
+    "vols": ["attestation-enactus-isi.pdf", null],
     "volLinks": [
       "https://www.linkedin.com/company/enactus/",
       "https://www.linkedin.com/company/aiesec/"
@@ -65,6 +65,16 @@
       "certificate-english-toeic.pdf",
       "certificate-french-tcf.pdf",
       null
+    ],
+    "landscape": [
+      "certificate-ibm-multimodal.pdf",
+      "certificate-ibm-finetuning.pdf",
+      "certificate-azure-ai900.pdf",
+      "certificate-azure-dp900.pdf",
+      "certificate-nlp-python.pdf",
+      "certificate-pyspark-udemy.pdf",
+      "degree-bachelor-2024.pdf",
+      "degree-baccalaureate-2021.pdf"
     ]
   },
   "metaLocales": [
@@ -97,7 +107,7 @@
         "contact": "Contact"
       },
       "hero": {
-        "title": "Mohamed Khalil Zrelly",
+        "title": "Mohamed Khalil ZRELLY",
         "subtitles": [
           "Generative AI Engineer Apprentice",
           "Agentic Systems Architect",
@@ -105,7 +115,16 @@
           "Multi-Agent Systems Builder"
         ],
         "cardRole": "Generative AI Engineer",
-        "desc": "Passionate about **Generative AI** and **Agentic Systems**, with a strong foundation in machine learning and problem solving, driven to build innovative AI solutions and grow through every project.",
+        "desc": "Passionate about **Generative AI** and **Agentic Systems**, I build on solid machine learning foundations to engineer intelligent agents that reason, retrieve, and deliver real-world impact.",
+        "skills": [
+          "LangChain",
+          "LangGraph",
+          "RAG",
+          "Multi-Agent",
+          "PyTorch",
+          "AWS"
+        ],
+        "skillHighlight": "RAG",
         "cta_projects": "View my projects",
         "cta_contact": "Get in touch",
         "card": {
@@ -448,7 +467,7 @@
           },
           {
             "years": "2021 — 2024",
-            "title": "Bachelor of Science in Computer Science",
+            "title": "Bachelor's Degree in Computer Science",
             "school": "ISI Ariana – University of Tunis El Manar",
             "link": "https://www.linkedin.com/school/university-of-tunis-el-manar/",
             "location": "Ariana, Tunisia",
@@ -456,7 +475,7 @@
           },
           {
             "years": "2021",
-            "title": "Tunisian Baccalaureate in Mathematics",
+            "title": "Baccalaureate Degree in Mathematics",
             "school": "Ibn Rachik Ezzahra High School",
             "location": "Ezzahra, Tunisia",
             "mention": null
@@ -571,13 +590,13 @@
           },
           {
             "icon": "Medal",
-            "title": "Ichmilni Race Tunisia Finalists",
+            "title": "Ichmilni Race Enactus Tunisia Finalists",
             "place": "Tunisia",
             "flagCode": "tn"
           },
           {
             "icon": "Award",
-            "title": "Hult Prize ISI Ariana Runner-up",
+            "title": "Hult Prize ISI Ariana Second Place",
             "place": "Tunisia",
             "flagCode": "tn"
           }
@@ -593,7 +612,7 @@
         "cta": "Send me a message →"
       },
       "footer": {
-        "copy": "© 2026 Mohamed Khalil Zrelly · Built with passion"
+        "copy": "© 2026 Mohamed Khalil ZRELLY · Built with passion"
       }
     },
     "fr": {
@@ -607,7 +626,7 @@
         "contact": "Contact"
       },
       "hero": {
-        "title": "Mohamed Khalil Zrelly",
+        "title": "Mohamed Khalil ZRELLY",
         "subtitles": [
           "Apprenti Ingénieur en IA Générative",
           "Architecte de Systèmes Agentiques",
@@ -615,7 +634,16 @@
           "Concepteur de Systèmes Multi-Agents"
         ],
         "cardRole": "Ingénieur IA Générative",
-        "desc": "Passionné par l'**IA Générative** et **Agentique**, avec de solides bases en machine learning, déterminé à construire des solutions IA innovantes et à progresser à travers chaque projet.",
+        "desc": "Passionné par l'**IA Générative** et **Agentique**, je m'appuie sur de solides bases en machine learning pour concevoir des agents intelligents qui raisonnent, recherchent et créent un impact concret.",
+        "skills": [
+          "LangChain",
+          "LangGraph",
+          "RAG",
+          "Multi-Agent",
+          "PyTorch",
+          "AWS"
+        ],
+        "skillHighlight": "RAG",
         "cta_projects": "Voir mes projets",
         "cta_contact": "Me contacter",
         "card": {
@@ -958,7 +986,7 @@
           },
           {
             "years": "2021 — 2024",
-            "title": "Licence en Informatique",
+            "title": "Diplôme de Licence en Informatique",
             "school": "ISI Ariana – Université de Tunis El Manar",
             "link": "https://www.linkedin.com/school/university-of-tunis-el-manar/",
             "location": "Ariana, Tunisie",
@@ -966,7 +994,7 @@
           },
           {
             "years": "2021",
-            "title": "Baccalauréat Tunisien en Mathématiques",
+            "title": "Baccalauréat en Mathématiques",
             "school": "Lycée Ibn Rachik Ezzahra",
             "location": "Ezzahra, Tunisie",
             "mention": null
@@ -1081,13 +1109,13 @@
           },
           {
             "icon": "Medal",
-            "title": "Ichmilni Race Finalistes Tunisie",
+            "title": "Ichmilni Race Enactus Tunisie Finalistes",
             "place": "Tunisie",
             "flagCode": "tn"
           },
           {
             "icon": "Award",
-            "title": "Hult Prize ISI Ariana Vice-champion",
+            "title": "Hult Prize ISI Ariana Deuxième Place",
             "place": "Tunisie",
             "flagCode": "tn"
           }
@@ -1103,7 +1131,7 @@
         "cta": "M'envoyer un message →"
       },
       "footer": {
-        "copy": "© 2026 Mohamed Khalil Zrelly · Construit avec passion"
+        "copy": "© 2026 Mohamed Khalil ZRELLY · Construit avec passion"
       }
     }
   }

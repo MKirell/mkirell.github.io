@@ -10,6 +10,11 @@
 
       <p class="hero__desc" v-html="boldify(t.hero.desc)"></p>
 
+      <div class="hero__skills">
+        <span v-for="skill in t.hero.skills" :key="skill" class="tag"
+          :class="{ 'tag--accent': skill === t.hero.skillHighlight }">{{ skill }}</span>
+      </div>
+
       <div class="hero__ctas">
         <a href="#projects" class="btn btn--primary">{{ t.hero.cta_projects }}</a>
         <a href="#contact" class="btn btn--ghost">{{ t.hero.cta_contact }}</a>
@@ -17,7 +22,6 @@
     </div>
 
     <div class="hero__visual">
-      <!-- Profile terminal card -->
       <div class="terminal">
         <div class="terminal__bar">
           <span class="dot red"></span>
@@ -118,7 +122,7 @@ const resumeUrl = computed(() => docUrl(resumeFile.value))
 
 .hero__name {
   font-family: 'Fraunces', serif;
-  font-size: clamp(2.9rem, 6.2vw, 5.1rem);
+  font-size: clamp(2.2rem, 4.2vw, 3.6rem);
   font-weight: 600;
   line-height: 1.06;
   color: var(--ink);
@@ -146,8 +150,15 @@ const resumeUrl = computed(() => docUrl(resumeFile.value))
   font-size: 1.08rem;
   color: var(--ink-soft);
   max-width: 560px;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
   line-height: 1.85;
+}
+
+.hero__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
 }
 
 .hero__ctas {
@@ -159,9 +170,9 @@ const resumeUrl = computed(() => docUrl(resumeFile.value))
 
 .hero__visual {
   min-width: 0;
+  transform: translateY(calc((8px - var(--pad)) / 2));
 }
 
-/* Terminal */
 .terminal {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -262,7 +273,6 @@ const resumeUrl = computed(() => docUrl(resumeFile.value))
   background: var(--surface-2);
 }
 
-/* Scroll indicator */
 .hero__scroll {
   position: absolute;
   bottom: 40px;
@@ -300,6 +310,10 @@ const resumeUrl = computed(() => docUrl(resumeFile.value))
     grid-template-columns: 1fr;
     padding: calc(var(--pad) + 88px) var(--pad) 60px;
     min-height: auto;
+  }
+
+  .hero__visual {
+    transform: none;
   }
 
   .hero__scroll {

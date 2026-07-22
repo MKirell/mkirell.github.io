@@ -13,6 +13,7 @@
       <ContactSection />
     </main>
     <AppFooter />
+    <PdfModal />
   </div>
 </template>
 
@@ -27,4 +28,5 @@ import EducationSection from '@/components/EducationSection.vue'
 import AchievementsSection from '@/components/AchievementsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import AppFooter from '@/components/AppFooter.vue'
+import PdfModal from '@/components/PdfModal.vue'
 </script>

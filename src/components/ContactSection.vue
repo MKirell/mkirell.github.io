@@ -28,7 +28,7 @@
           </span>
         </a>
         <a :href="person.linkedin" target="_blank" rel="noopener noreferrer" class="contact-item"
-          :aria-label="t.contact.linkedin_label + ' - Mohamed Khalil Zrelly'">
+          :aria-label="t.contact.linkedin_label + ' - Mohamed Khalil ZRELLY'">
           <span class="contact-item__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17">
               <path
@@ -37,11 +37,11 @@
           </span>
           <span>
             <span class="contact-item__label">{{ t.contact.linkedin_label }}</span>
-            <span class="contact-item__value">linkedin.com/in/mohamed-khalil-zrelly</span>
+            <span class="contact-item__value">in/mohamed-khalil-zrelly</span>
           </span>
         </a>
-        <a href="https://www.google.com/maps/place/Le+Bourget,+France" target="_blank" rel="noopener noreferrer"
-          class="contact-item" :aria-label="t.contact.location_label + ' - Le Bourget, Île-de-France, France'">
+        <a href="https://www.google.com/maps/place/Paris,+France" target="_blank" rel="noopener noreferrer"
+          class="contact-item" :aria-label="t.contact.location_label + ' - Paris, Île-de-France, France'">
           <span class="contact-item__icon" aria-hidden="true">
             <MapPin :size="17" :stroke-width="1.8" />
           </span>

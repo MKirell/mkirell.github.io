@@ -85,9 +85,6 @@ onUnmounted(() => {
   transition: padding var(--transition);
 }
 
-/* Background + blur live on a pseudo-element rather than on .nav itself.
-   A backdrop-filter on .nav would make it the containing block for the
-   fixed mobile menu panel, collapsing it to the nav's height. */
 .nav::before {
   content: '';
   position: absolute;
@@ -124,7 +121,7 @@ onUnmounted(() => {
 
 @media (max-width: 700px) {
   .nav-logo__img {
-    height: 26px;
+    height: 30px;
   }
 }
 
@@ -298,11 +295,21 @@ onUnmounted(() => {
 
 @media (max-width: 700px) {
   .nav {
-    padding: 16px 20px;
+    padding: 20px 20px;
   }
 
   .nav--scrolled {
-    padding: 12px 20px;
+    padding: 16px 20px;
+  }
+
+  .nav__burger {
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .nav__burger span {
+    width: 26px;
+    height: 3px;
   }
 }
 
