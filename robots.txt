@@ -37,4 +37,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://mkirell.github.io/sitemap.xml
+Sitemap: https://mkirell.com/sitemap.xml
