@@ -1,6 +1,8 @@
 <template>
   <nav id="navbar" :class="['nav', { 'nav--scrolled': scrolled }]" aria-label="Main navigation">
-    <a href="#main-content" class="nav-logo" aria-label="MKirell – go to top">MKirell<span class="logo-dot">.</span></a>
+    <a href="#main-content" class="nav-logo" aria-label="MKirell – go to top">
+      <img :src="logoUrl" alt="MKirell" class="nav-logo__img">
+    </a>
 
     <ul id="navLinks" :class="['nav__links', { open: menuOpen }]" role="list">
       <li v-for="(label, key) in t.nav" :key="key">
@@ -26,6 +28,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
+import logoUrl from '@/assets/imgs/mkirell-logo.png'
 
 const { lang, t, setLang, metaLocales } = useLanguage()
 
@@ -108,12 +111,21 @@ onUnmounted(() => {
 }
 
 .nav-logo {
-  font-family: 'Fraunces', serif;
-  font-size: 1.45rem;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
+}
+
+.nav-logo__img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .nav-logo__img {
+    height: 26px;
+  }
 }
 
 .nav__links {

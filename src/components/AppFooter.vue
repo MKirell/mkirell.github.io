@@ -2,7 +2,8 @@
   <footer class="footer" aria-label="Site footer">
     <div class="container">
       <div class="footer__inner">
-        <span class="footer-logo" aria-label="MKirell">MKirell<span class="logo-dot">.</span></span>
+        <img :src="logoUrl" alt="MKirell" class="footer-logo">
+
         <small class="footer__copy">{{ t.footer.copy }}</small>
         <nav class="footer__socials" aria-label="Social links">
           <a :href="person.linkedin" target="_blank" rel="noopener noreferrer" class="footer__link"
@@ -17,6 +18,7 @@
 <script setup>
 import { useLanguage } from '@/composables/useLanguage.js'
 import portfolioData from '@/data/portfolio.json'
+import logoUrl from '@/assets/imgs/mkirell-logo.png'
 const { person } = portfolioData
 const { t } = useLanguage()
 </script>
@@ -37,10 +39,15 @@ const { t } = useLanguage()
 }
 
 .footer-logo {
-  font-family: 'Fraunces', serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--ink);
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .footer-logo {
+    height: 22px;
+  }
 }
 
 .footer__copy {
