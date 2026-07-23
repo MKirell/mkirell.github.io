@@ -16,9 +16,8 @@
               <div class="edu-card__body">
                 <div class="edu-card__title-row">
                   <h3>{{ deg.title }}</h3>
-                  <a v-if="degDocs[i]" :href="docUrl(degDocs[i])"
-                    @click.prevent="openPdf(docUrl(degDocs[i]), deg.title)" class="doc-link icon-hint"
-                    title="View diploma">
+                  <a v-if="degDocs[i]" :href="docUrl(degDocs[i])" target="_blank" rel="noopener noreferrer"
+                    class="doc-link icon-hint" title="View diploma">
                     <Paperclip :size="15" />
                   </a>
                 </div>
@@ -72,8 +71,7 @@
                 </div>
                 <time v-if="cert.date" class="cert-item__date cert-item__date--inline">{{ cert.date }}</time>
                 <a v-if="certDocs[certPage * CERTS_PER_PAGE + i]"
-                  :href="docUrl(certDocs[certPage * CERTS_PER_PAGE + i])"
-                  @click.prevent="openPdf(docUrl(certDocs[certPage * CERTS_PER_PAGE + i]), cert.title)"
+                  :href="docUrl(certDocs[certPage * CERTS_PER_PAGE + i])" target="_blank" rel="noopener noreferrer"
                   class="doc-link icon-hint" title="View certificate">
                   <Paperclip :size="15" />
                 </a>
@@ -90,9 +88,8 @@
             <span :class="['fi', `fi-${langItem.flagCode}`]" class="lang-flag-icon" aria-hidden="true"></span>
             <span class="lang-name">{{ langItem.name }}</span>
             <span class="lang-level">{{ langItem.level }}</span>
-            <a v-if="langDocs[i]" :href="docUrl(langDocs[i])"
-              @click.prevent="openPdf(docUrl(langDocs[i]), langItem.name)" class="doc-link icon-hint"
-              title="View certificate">
+            <a v-if="langDocs[i]" :href="docUrl(langDocs[i])" target="_blank" rel="noopener noreferrer"
+              class="doc-link icon-hint" title="View certificate">
               <Paperclip :size="15" />
             </a>
           </div>
@@ -110,14 +107,12 @@
 import { computed, ref, watch } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { docUrl } from '@/utils/docs.js'
-import { usePdfViewer } from '@/composables/usePdfViewer.js'
 import { Paperclip, Zap, MessageSquare, Cloud, BarChart3, Layers, SlidersHorizontal, ChevronLeft, ChevronRight } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
 
 const icons = { Zap, MessageSquare, Cloud, BarChart3, Layers, SlidersHorizontal }
 
 const { t, lang } = useLanguage()
-const { openPdf } = usePdfViewer()
 const { degrees: degDocs, certs: certDocs, languages: langDocs } = portfolioData.docs
 
 const CERTS_PER_PAGE = 4

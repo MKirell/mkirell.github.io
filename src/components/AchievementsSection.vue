@@ -25,7 +25,7 @@
               <p class="extra-card__role">{{ vol.role }}</p>
               <div class="extra-card__period-row">
                 <time class="extra-card__period">{{ vol.period }}</time>
-                <a v-if="volDocs[i]" :href="docUrl(volDocs[i])" @click.prevent="openPdf(docUrl(volDocs[i]), vol.org)"
+                <a v-if="volDocs[i]" :href="docUrl(volDocs[i])" target="_blank" rel="noopener noreferrer"
                   class="doc-link icon-hint" title="View attestation">
                   <Paperclip :size="15" />
                 </a>
@@ -60,9 +60,8 @@
                     aria-hidden="true"></span>
                 </span>
               </div>
-              <a v-if="awardDocs[i]" :href="docUrl(awardDocs[i])"
-                @click.prevent="openPdf(docUrl(awardDocs[i]), award.title)" class="doc-link icon-hint"
-                title="View document">
+              <a v-if="awardDocs[i]" :href="docUrl(awardDocs[i])" target="_blank" rel="noopener noreferrer"
+                class="doc-link icon-hint" title="View document">
                 <Paperclip :size="15" />
               </a>
             </li>
@@ -98,14 +97,12 @@ import { ref, onUnmounted } from 'vue'
 import { useLanguage } from '@/composables/useLanguage.js'
 import { boldify } from '@/utils/text.js'
 import { docUrl, imgUrl } from '@/utils/docs.js'
-import { usePdfViewer } from '@/composables/usePdfViewer.js'
 import { Paperclip, X, ChevronLeft, ChevronRight, Trophy, Medal, Award } from '@lucide/vue'
 import portfolioData from '@/data/portfolio.json'
 
 const icons = { Trophy, Medal, Award }
 
 const { t } = useLanguage()
-const { openPdf } = usePdfViewer()
 const { vols: volDocs, awards: awardDocs, volLinks } = portfolioData.docs
 
 const lightbox = ref({ open: false, images: [], index: 0, title: '' })
